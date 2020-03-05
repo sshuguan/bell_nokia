@@ -1,0 +1,31 @@
+devices:
+  CR01-Nokia-NGCore:
+    alias: "uut1"
+    os: sros
+    type: sros
+    connections:
+      cli:
+        ip: 172.16.18.2
+        protocol: ssh
+        settings:
+          DEFAULT_CLI_ENGINE: mdcli
+    credentials:
+      default:
+        password: Nokia123
+        username: NokiaTest
+
+  CR02-Nokia-NGCore:
+    alias: "uut2"
+    os: sros
+    type: sros
+    connections:
+      cli:
+        ip: 172.16.18.4
+        protocol: ssh
+        settings:
+          DEFAULT_CLI_ENGINE: mdcli
+    credentials:
+      default:
+        password: Nokia123
+        username: NokiaTest
+ 
