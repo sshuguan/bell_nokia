@@ -32,6 +32,9 @@ class ShowCardDetail(ShowCardDetailSchema):
     def cli(self, output=None):
         if output is None:
             out = self.device.execute(self.cli_command)
+        elif re.search(r'^[\dAB]$', output):
+            self.cli_command = 'show card %s detail' % output
+            out = self.device.execute(self.cli_command)
         else:
             out = output
 
@@ -88,6 +91,8 @@ class ShowCardDetail(ShowCardDetailSchema):
             #     Memory capacity               : 16,384 MB
 
         parsed = {}
+        if re.search(r'MINOR: MGMT_CORE #2301', out):
+            return parsed
 
         # split <out> into list
         s0 = re.compile(r'\r?\n=+\r?\nCard \w+\r?\n=+\r?\n')
