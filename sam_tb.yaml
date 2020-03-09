@@ -1,4 +1,4 @@
-# this file includes 2 Nokia SROS nodes
+# this yaml file includes 2 Nokia SROS nodes
 devices:
   CR01-Nokia-NGCore:
     alias: "uut1"
