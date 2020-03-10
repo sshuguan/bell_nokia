@@ -1,3 +1,4 @@
+import re
 import logging
 from pyats import aetest
 from genie.testbed import load
@@ -8,13 +9,19 @@ from genie.libs.parser.sros.show_system_memory import ShowSystemMemory
 
 logger = logging.getLogger(__name__)
 
+# convert "123,456,789" to 123456789
+# convert "85 %" or "85%" to 85
+# convert "75C" to 75
+# convert "3,903 MB" to 3903
+# convert "61,712 KB" to 61712
+
 
 def s2i(s):
-    if s.endswith('C'):
-        # convert "56C" to 56
-        return int(''.join(s.split('C')))
-    # convert "123,456,789" to 123456789
-    return int(''.join(s.split(',')))
+    m = re.search(r'^([\d,]+) ?(%|KB|MB|C)?', s)
+    if m:
+        return int(''.join(m.group(1).split(',')))
+    # return original string if not match
+    return s
 
 
 class CommonSetup(aetest.CommonSetup):
@@ -125,3 +132,33 @@ class Test_CardNoError(aetest.Testcase):
         # set test result
         self.passed("No hardware error") if testpass \
             else self.failed('Hardware errors')
+
+
+class Test_FlashNotFull(aetest.Testcase):
+
+    @aetest.test
+    def check_Flash_health(self, testbed):
+
+        testpass = True
+        for dev in testbed.devices.values():
+            # parse output of "show card A|B detail"
+            for cpm in ["A", "B"]:
+                cpmd = ShowCardDetail(device=dev).parse(output=cpm)
+
+                if cpm not in cpmd:
+                    logger.info("CPM %s not equipped!" % cpm)
+                    continue  # cpm A|B not equipped
+
+                # check flash card not full
+                for k, kd in cpmd[cpm].items():
+                    if re.search(r'^Flash', k) and \
+                            kd['Operational state'] == "up":
+                        if s2i(kd['Percent Used']) > 98:
+                            logger.error("CPM %s, %s full" % (cpm, k))
+                            testpass = testpass and False
+                        else:
+                            logger.info("CPM %s, %s has free space" % (cpm, k))
+
+        # set test result
+        self.passed("Flash has fress space") if testpass \
+            else self.failed('Flash full !!!')
