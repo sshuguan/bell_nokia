@@ -143,7 +143,7 @@ class ShowCardDetail(ShowCardDetailSchema):
                     continue
                 # add key:value when hitting line such as
                 # "    Platform type                 : 7750"
-                m = re.search(r'^\s{4}\b(.+)\b +: +\b(.+)\b$', line)
+                m = re.search(r'^\s{4}\b(.+)\b +: +\b(.+)$', line)
                 if m and slot and subkey:
                     parsed[slot][subkey][m.group(1)] = m.group(2)
                     continue
