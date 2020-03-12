@@ -32,7 +32,7 @@ class CommonSetup(aetest.CommonSetup):
         self.parent.parameters['testbed'] = testbed = load(testbed)
 
         # connect testbed devices
-        for dev in testbed.devices.values():
+        for dev in testbed:
             dev.connect()
             dev.mdcli_execute("environment more false")
             logger.info('Device %s connected!' % dev.name)
@@ -43,7 +43,7 @@ class Test_SysMem(aetest.Testcase):
     @aetest.test
     def check_system_memory(self, testbed):
         testpass = True
-        for dev in testbed.devices.values():
+        for dev in testbed:
             logger.info('Check %s system memory' % dev.name)
             # parse output of "show system memory-pools"
             memd = ShowSystemMemory(device=dev).parse()
@@ -74,7 +74,7 @@ class Test_SysCpu(aetest.Testcase):
     def check_system_cpu(self, testbed):
 
         testpass = True
-        for dev in testbed.devices.values():
+        for dev in testbed:
             logger.info('Check %s system cpu' % dev.name)
             # parse output of "show system cpu"
             cpud = ShowSystemCpu(device=dev).parse()
@@ -102,7 +102,7 @@ class Test_CardNoError(aetest.Testcase):
     def check_card_health(self, testbed):
 
         testpass = True
-        for dev in testbed.devices.values():
+        for dev in testbed:
             # parse output of "show card detail"
             cardd = ShowCardDetail(device=dev).parse()
             for s, cd in cardd.items():
@@ -140,7 +140,7 @@ class Test_FlashNotFull(aetest.Testcase):
     def check_Flash_health(self, testbed):
 
         testpass = True
-        for dev in testbed.devices.values():
+        for dev in testbed:
             # parse output of "show card A|B detail"
             for cpm in ["A", "B"]:
                 cpmd = ShowCardDetail(device=dev).parse(output=cpm)
