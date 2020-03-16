@@ -1,0 +1,1725 @@
+
+===============================================================================
+Rtr Base ISIS Instance 0 Prefix/SID Table
+===============================================================================
+Prefix                            SID        Lvl/Typ    SRMS   AdvRtr
+                                                         MT     Flags
+-------------------------------------------------------------------------------
+67.70.219.13/32                   213        2/Int.      N     CR01-Nokia-
+                                                               NGCore
+                                                            0       NnP
+67.70.219.14/32                   214        2/Int.      N     CR02-Nokia-
+                                                               NGCore
+                                                            0       NnP
+67.70.219.15/32                   215        2/Int.      N     newbx1_RE0
+                                                            0       N
+67.70.219.32/32                   232        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.32/32                   232        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.32/32                   232        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.32/32                   232        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.32/32                   232        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.32/32                   232        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.32/32                   232        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.33/32                   233        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.33/32                   233        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.33/32                   233        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.33/32                   233        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.33/32                   233        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.33/32                   233        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.33/32                   233        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.35/32                   235        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.35/32                   235        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.35/32                   235        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.35/32                   235        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.35/32                   235        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.35/32                   235        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.35/32                   235        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.37/32                   237        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.37/32                   237        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.37/32                   237        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.37/32                   237        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.37/32                   237        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.37/32                   237        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.37/32                   237        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.41/32                   241        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.41/32                   241        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.41/32                   241        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.41/32                   241        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.41/32                   241        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.41/32                   241        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.41/32                   241        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.42/32                   242        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.42/32                   242        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.42/32                   242        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.42/32                   242        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.42/32                   242        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.42/32                   242        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.42/32                   242        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.48/32                   248        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.48/32                   248        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.48/32                   248        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.48/32                   248        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.48/32                   248        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.48/32                   248        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.48/32                   248        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.50/32                   250        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.50/32                   250        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.50/32                   250        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.50/32                   250        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.50/32                   250        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.50/32                   250        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.50/32                   250        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.51/32                   251        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.51/32                   251        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.51/32                   251        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.51/32                   251        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.51/32                   251        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.51/32                   251        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.51/32                   251        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.53/32                   253        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.53/32                   253        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.53/32                   253        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.53/32                   253        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.53/32                   253        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.53/32                   253        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.53/32                   253        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.55/32                   255        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.55/32                   255        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.55/32                   255        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.55/32                   255        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.55/32                   255        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.55/32                   255        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.55/32                   255        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.57/32                   257        2/Int.      N     core1-tatooine
+                                                            0       N
+67.70.219.58/32                   258        2/Int.      N     core2-tatooine
+                                                            0       N
+67.70.219.59/32                   259        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.59/32                   259        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.59/32                   259        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.59/32                   259        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.59/32                   259        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.59/32                   259        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.59/32                   259        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.60/32                   260        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.60/32                   260        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.60/32                   260        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.60/32                   260        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.60/32                   260        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.60/32                   260        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.60/32                   260        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.63/32                   263        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.63/32                   263        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.63/32                   263        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.63/32                   263        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.63/32                   263        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.63/32                   263        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.63/32                   263        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.64/32                   264        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.64/32                   264        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.64/32                   264        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.64/32                   264        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.64/32                   264        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.64/32                   264        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.64/32                   264        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.65/32                   265        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.65/32                   265        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.65/32                   265        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.65/32                   265        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.65/32                   265        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.65/32                   265        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.65/32                   265        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.67/32                   267        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.67/32                   267        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.67/32                   267        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.67/32                   267        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.67/32                   267        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.67/32                   267        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.67/32                   267        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.69/32                   269        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.69/32                   269        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.69/32                   269        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.69/32                   269        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.69/32                   269        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.69/32                   269        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.69/32                   269        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.70/32                   270        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.70/32                   270        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.70/32                   270        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.70/32                   270        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.70/32                   270        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.70/32                   270        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.70/32                   270        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.73/32                   273        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.73/32                   273        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.73/32                   273        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.73/32                   273        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.73/32                   273        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.73/32                   273        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.73/32                   273        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.74/32                   274        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.74/32                   274        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.74/32                   274        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.74/32                   274        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.74/32                   274        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.74/32                   274        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.74/32                   274        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.75/32                   275        2/Int.      N     tcore4-rohan
+                                                            0       N
+67.70.219.76/32                   276        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.76/32                   276        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.76/32                   276        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.76/32                   276        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.76/32                   276        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.76/32                   276        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.76/32                   276        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.78/32                   278        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.78/32                   278        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.78/32                   278        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.78/32                   278        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.78/32                   278        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.78/32                   278        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.78/32                   278        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.79/32                   279        2/Int.      N     tor-1.qa-site1
+                                                            0       N
+67.70.219.81/32                   281        2/Int.      N     vpce2-tatooine
+                                                            0       N
+67.70.219.82/32                   282        2/Int.      N     pe1-tatooine
+                                                            0       N
+67.70.219.83/32                   283        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.83/32                   283        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.83/32                   283        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.83/32                   283        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.83/32                   283        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.83/32                   283        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.83/32                   283        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.84/32                   284        2/Int.      N     bl1-tatooine
+                                                            0       N
+67.70.219.85/32                   285        2/Int.      N     bl2-tatooine
+                                                            0       N
+67.70.219.86/32                   286        2/Int.      N     tor-2.qa-site1
+                                                            0       N
+67.70.219.87/32                   287        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.87/32                   287        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.87/32                   287        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.87/32                   287        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.87/32                   287        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.87/32                   287        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.87/32                   287        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.88/32                   288        2/Int.      N     spine1-tatooine
+                                                            0       N
+67.70.219.89/32                   289        2/Int.      N     leaf-1.qa-site1
+                                                            0       N
+67.70.219.90/32                   290        2/Int.      N     spine2-tatooine
+                                                            0       N
+67.70.219.92/32                   292        2/Int.      N     dis9-rohan
+                                                            0       N
+67.70.219.93/32                   293        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.93/32                   293        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.93/32                   293        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.93/32                   293        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.93/32                   293        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.93/32                   293        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.93/32                   293        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.95/32                   295        2/Int.      N     leaf-2.qa-site1
+                                                            0       N
+67.70.219.96/32                   296        2/Int.      N     tcore3-rohan
+                                                            0       N
+67.70.219.97/32                   297        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.97/32                   297        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.97/32                   297        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.97/32                   297        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.97/32                   297        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.97/32                   297        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.97/32                   297        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.98/32                   298        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.98/32                   298        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.98/32                   298        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.98/32                   298        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.98/32                   298        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.98/32                   298        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.98/32                   298        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.100/32                  300        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.100/32                  300        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.100/32                  300        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.100/32                  300        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.100/32                  300        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.100/32                  300        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.100/32                  300        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.101/32                  301        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.101/32                  301        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.101/32                  301        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.101/32                  301        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.101/32                  301        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.101/32                  301        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.101/32                  301        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.102/32                  302        2/Int.      N     dis17-rohan_RE1
+                                                            0       N
+67.70.219.103/32                  303        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.103/32                  303        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.103/32                  303        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.103/32                  303        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.103/32                  303        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.103/32                  303        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.103/32                  303        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.104/32                  304        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.104/32                  304        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.104/32                  304        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.104/32                  304        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.104/32                  304        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.104/32                  304        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.104/32                  304        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.105/32                  305        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.105/32                  305        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.105/32                  305        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.105/32                  305        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.105/32                  305        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.105/32                  305        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.105/32                  305        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.106/32                  306        2/Int.      N     tcore4-moria
+                                                            0       N
+67.70.219.107/32                  307        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.107/32                  307        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.107/32                  307        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.107/32                  307        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.107/32                  307        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.107/32                  307        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.107/32                  307        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.108/32                  308        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.108/32                  308        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.108/32                  308        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.108/32                  308        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.108/32                  308        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.108/32                  308        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.108/32                  308        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.109/32                  309        2/Int.      N     CR01-Cisco-
+                                                               NGCore
+                                                            0       N
+67.70.219.110/32                  310        2/Int.      N     CR02-Cisco-
+                                                               NGCore
+                                                            0       N
+67.70.219.111/32                  311        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.111/32                  311        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.111/32                  311        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.111/32                  311        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.111/32                  311        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.111/32                  311        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.111/32                  311        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.112/32                  312        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.112/32                  312        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.112/32                  312        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.112/32                  312        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.112/32                  312        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.112/32                  312        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.112/32                  312        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.113/32                  313        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.113/32                  313        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.113/32                  313        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.113/32                  313        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.113/32                  313        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.113/32                  313        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.113/32                  313        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.114/32                  314        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.114/32                  314        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.114/32                  314        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.114/32                  314        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.114/32                  314        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.114/32                  314        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.114/32                  314        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.115/32                  315        2/Int.      N     tcore3-moria
+                                                            0       N
+67.70.219.116/32                  316        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.116/32                  316        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.116/32                  316        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.116/32                  316        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.116/32                  316        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.116/32                  316        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.116/32                  316        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.117/32                  317        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.117/32                  317        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.117/32                  317        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.117/32                  317        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.117/32                  317        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.117/32                  317        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.117/32                  317        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.118/32                  318        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.118/32                  318        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.118/32                  318        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.118/32                  318        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.118/32                  318        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.118/32                  318        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.118/32                  318        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.119/32                  319        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.119/32                  319        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.119/32                  319        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.119/32                  319        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.119/32                  319        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.119/32                  319        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.119/32                  319        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.120/32                  320        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.120/32                  320        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.120/32                  320        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.120/32                  320        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.120/32                  320        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.120/32                  320        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.120/32                  320        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.122/32                  322        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.122/32                  322        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.122/32                  322        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.122/32                  322        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.122/32                  322        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.122/32                  322        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.122/32                  322        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.123/32                  323        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.123/32                  323        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.123/32                  323        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.123/32                  323        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.123/32                  323        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.123/32                  323        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.123/32                  323        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.125/32                  325        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.125/32                  325        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.125/32                  325        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.125/32                  325        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.125/32                  325        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.125/32                  325        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.125/32                  325        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.127/32                  327        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.127/32                  327        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.127/32                  327        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.127/32                  327        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.127/32                  327        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.127/32                  327        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.127/32                  327        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.128/32                  328        2/Int.      N     bx2-rohan
+                                                            0       N
+67.70.219.129/32                  329        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.129/32                  329        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.129/32                  329        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.129/32                  329        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.129/32                  329        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.129/32                  329        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.129/32                  329        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.130/32                  330        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.130/32                  330        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.130/32                  330        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.130/32                  330        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.130/32                  330        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.130/32                  330        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.130/32                  330        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.131/32                  331        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.131/32                  331        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.131/32                  331        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.131/32                  331        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.131/32                  331        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.131/32                  331        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.131/32                  331        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.132/32                  332        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.132/32                  332        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.132/32                  332        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.132/32                  332        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.132/32                  332        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.132/32                  332        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.132/32                  332        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.137/32                  337        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.137/32                  337        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.137/32                  337        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.137/32                  337        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.137/32                  337        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.137/32                  337        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.137/32                  337        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.138/32                  338        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.138/32                  338        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.138/32                  338        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.138/32                  338        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.138/32                  338        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.138/32                  338        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.138/32                  338        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.139/32                  339        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.139/32                  339        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.139/32                  339        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.139/32                  339        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.139/32                  339        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.139/32                  339        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.139/32                  339        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.143/32                  343        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.143/32                  343        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.143/32                  343        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.143/32                  343        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.143/32                  343        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.143/32                  343        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.143/32                  343        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.148/32                  348        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.148/32                  348        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.148/32                  348        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.148/32                  348        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.148/32                  348        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.148/32                  348        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.148/32                  348        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.150/32                  350        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.150/32                  350        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.150/32                  350        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.150/32                  350        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.150/32                  350        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.150/32                  350        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.150/32                  350        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.151/32                  351        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.151/32                  351        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.151/32                  351        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.151/32                  351        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.151/32                  351        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.151/32                  351        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.151/32                  351        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.159/32                  359        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.159/32                  359        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.159/32                  359        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.159/32                  359        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.159/32                  359        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.159/32                  359        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.159/32                  359        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.160/32                  360        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.160/32                  360        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.160/32                  360        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.160/32                  360        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.160/32                  360        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.160/32                  360        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.160/32                  360        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.161/32                  361        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.161/32                  361        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.161/32                  361        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.161/32                  361        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.161/32                  361        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.161/32                  361        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.161/32                  361        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.168/32                  368        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+67.70.219.168/32                  368        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+67.70.219.168/32                  368        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+67.70.219.168/32                  368        2/Int.      N     bl1-naboo
+                                                            0       RnP
+67.70.219.168/32                  368        2/Int.      N     bl2-naboo
+                                                            0       RnP
+67.70.219.168/32                  368        2/Int.      N     bl1-hoth
+                                                            0       RnP
+67.70.219.168/32                  368        2/Int.      N     bl2-hoth
+                                                            0       RnP
+67.70.219.174/32                  374        2/Int.      N     tor1-tatooine
+                                                            0       N
+67.70.219.175/32                  375        2/Int.      N     tor2-tatooine
+                                                            0       N
+69.158.192.48/32                  548        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.192.48/32                  548        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.192.48/32                  548        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.192.48/32                  548        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.192.48/32                  548        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.192.48/32                  548        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.192.48/32                  548        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.192.54/32                  554        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.192.54/32                  554        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.192.54/32                  554        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.192.54/32                  554        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.192.54/32                  554        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.192.54/32                  554        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.192.54/32                  554        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.192.55/32                  555        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.192.55/32                  555        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.192.55/32                  555        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.192.55/32                  555        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.192.55/32                  555        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.192.55/32                  555        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.192.55/32                  555        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.192.56/32                  556        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.192.56/32                  556        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.192.56/32                  556        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.192.56/32                  556        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.192.56/32                  556        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.192.56/32                  556        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.192.56/32                  556        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.192.57/32                  557        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.192.57/32                  557        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.192.57/32                  557        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.192.57/32                  557        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.192.57/32                  557        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.192.57/32                  557        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.192.57/32                  557        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.192.58/32                  558        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.192.58/32                  558        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.192.58/32                  558        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.192.58/32                  558        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.192.58/32                  558        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.192.58/32                  558        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.192.58/32                  558        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.192.59/32                  559        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.192.59/32                  559        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.192.59/32                  559        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.192.59/32                  559        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.192.59/32                  559        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.192.59/32                  559        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.192.59/32                  559        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.5/32                   761        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.5/32                   761        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.5/32                   761        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.5/32                   761        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.5/32                   761        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.5/32                   761        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.5/32                   761        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.8/32                   764        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.8/32                   764        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.8/32                   764        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.8/32                   764        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.8/32                   764        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.8/32                   764        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.8/32                   764        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.9/32                   765        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.9/32                   765        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.9/32                   765        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.9/32                   765        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.9/32                   765        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.9/32                   765        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.9/32                   765        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.10/32                  766        2/Int.      N     tcore1-mordor
+                                                            0       N
+69.158.196.15/32                  771        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.15/32                  771        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.15/32                  771        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.15/32                  771        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.15/32                  771        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.15/32                  771        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.15/32                  771        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.24/32                  780        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.24/32                  780        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.24/32                  780        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.24/32                  780        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.24/32                  780        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.24/32                  780        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.24/32                  780        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.32/32                  788        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.32/32                  788        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.32/32                  788        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.32/32                  788        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.32/32                  788        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.32/32                  788        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.32/32                  788        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.34/32                  790        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.34/32                  790        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.34/32                  790        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.34/32                  790        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.34/32                  790        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.34/32                  790        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.34/32                  790        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.36/32                  792        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.36/32                  792        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.36/32                  792        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.36/32                  792        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.36/32                  792        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.36/32                  792        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.36/32                  792        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.38/32                  794        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.38/32                  794        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.38/32                  794        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.38/32                  794        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.38/32                  794        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.38/32                  794        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.38/32                  794        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.39/32                  795        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.39/32                  795        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.39/32                  795        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.39/32                  795        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.39/32                  795        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.39/32                  795        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.39/32                  795        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.47/32                  803        2/Int.      N     bl1-naboo
+                                                            0       N
+69.158.196.48/32                  804        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.48/32                  804        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.48/32                  804        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.48/32                  804        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.48/32                  804        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.48/32                  804        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.48/32                  804        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.51/32                  807        2/Int.      N     tcore1-lorien
+                                                            0       N
+69.158.196.52/32                  808        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.52/32                  808        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.52/32                  808        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.52/32                  808        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.52/32                  808        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.52/32                  808        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.52/32                  808        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.53/32                  809        2/Int.      N     bl2-naboo
+                                                            0       N
+69.158.196.58/32                  814        2/Int.      N     bl1-hoth
+                                                            0       N
+69.158.196.59/32                  815        2/Int.      N     bl2-hoth
+                                                            0       N
+69.158.196.96/32                  864        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.96/32                  864        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.96/32                  864        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.96/32                  864        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.96/32                  864        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.96/32                  864        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.96/32                  864        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.142/32                 914        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.142/32                 914        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.142/32                 914        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.142/32                 914        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.142/32                 914        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.142/32                 914        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.142/32                 914        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.192/32                 964        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.192/32                 964        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.192/32                 964        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.192/32                 964        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.192/32                 964        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.192/32                 964        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.192/32                 964        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.197/32                 969        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.197/32                 969        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.197/32                 969        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.197/32                 969        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.197/32                 969        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.197/32                 969        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.197/32                 969        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.200/32                 972        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.200/32                 972        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.200/32                 972        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.200/32                 972        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.200/32                 972        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.200/32                 972        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.200/32                 972        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.201/32                 973        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.201/32                 973        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.201/32                 973        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.201/32                 973        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.201/32                 973        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.201/32                 973        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.201/32                 973        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.203/32                 975        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.203/32                 975        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.203/32                 975        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.203/32                 975        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.203/32                 975        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.203/32                 975        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.203/32                 975        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.206/32                 978        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.206/32                 978        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.206/32                 978        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.206/32                 978        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.206/32                 978        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.206/32                 978        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.206/32                 978        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.207/32                 979        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.207/32                 979        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.207/32                 979        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.207/32                 979        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.207/32                 979        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.207/32                 979        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.207/32                 979        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.208/32                 980        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.208/32                 980        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.208/32                 980        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.208/32                 980        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.208/32                 980        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.208/32                 980        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.208/32                 980        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.212/32                 984        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.212/32                 984        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.212/32                 984        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.212/32                 984        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.212/32                 984        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.212/32                 984        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.212/32                 984        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.213/32                 985        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.213/32                 985        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.213/32                 985        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.213/32                 985        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.213/32                 985        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.213/32                 985        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.213/32                 985        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.214/32                 986        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.214/32                 986        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.214/32                 986        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.214/32                 986        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.214/32                 986        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.214/32                 986        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.214/32                 986        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.215/32                 987        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.215/32                 987        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.215/32                 987        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.215/32                 987        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.215/32                 987        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.215/32                 987        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.215/32                 987        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.216/32                 988        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.216/32                 988        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.216/32                 988        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.216/32                 988        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.216/32                 988        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.216/32                 988        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.216/32                 988        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.217/32                 989        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.217/32                 989        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.217/32                 989        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.217/32                 989        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.217/32                 989        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.217/32                 989        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.217/32                 989        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.218/32                 990        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.218/32                 990        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.218/32                 990        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.218/32                 990        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.218/32                 990        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.218/32                 990        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.218/32                 990        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.219/32                 991        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.219/32                 991        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.219/32                 991        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.219/32                 991        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.219/32                 991        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.219/32                 991        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.219/32                 991        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.221/32                 993        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.221/32                 993        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.221/32                 993        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.221/32                 993        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.221/32                 993        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.221/32                 993        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.221/32                 993        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.226/32                 998        2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.226/32                 998        2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.226/32                 998        2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.226/32                 998        2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.226/32                 998        2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.226/32                 998        2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.226/32                 998        2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.228/32                 1000       2/Int.      N     tcore2-lorien
+                                                            0       N
+69.158.196.233/32                 1005       2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.233/32                 1005       2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.233/32                 1005       2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.233/32                 1005       2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.233/32                 1005       2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.233/32                 1005       2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.233/32                 1005       2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.234/32                 1006       2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.234/32                 1006       2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.234/32                 1006       2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.234/32                 1006       2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.234/32                 1006       2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.234/32                 1006       2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.234/32                 1006       2/Int.      N     bl2-hoth
+                                                            0       RnP
+69.158.196.238/32                 1010       2/Int.      N     tcore2-mordor
+                                                            0       N
+69.158.196.239/32                 1011       2/Int.      N     tcore4-rohan
+                                                            0       RnP
+69.158.196.239/32                 1011       2/Int.      N     bl1-tatooine
+                                                            0       RnP
+69.158.196.239/32                 1011       2/Int.      N     bl2-tatooine
+                                                            0       RnP
+69.158.196.239/32                 1011       2/Int.      N     bl1-naboo
+                                                            0       RnP
+69.158.196.239/32                 1011       2/Int.      N     bl2-naboo
+                                                            0       RnP
+69.158.196.239/32                 1011       2/Int.      N     bl1-hoth
+                                                            0       RnP
+69.158.196.239/32                 1011       2/Int.      N     bl2-hoth
+                                                            0       RnP
+172.16.2.88/32                    1088       2/Int.      N     tor1-tatooine
+                                                            0       N
+172.16.2.89/32                    1089       2/Int.      N     tor2-tatooine
+                                                            0       N
+172.18.0.208/32                   10208      2/Int.      N     tor-1.qa-site1
+                                                            0       N
+172.18.0.209/32                   10209      2/Int.      N     tor-2.qa-site1
+                                                            0       N
+172.18.0.210/32                   10210      2/Int.      N     tor-3.qa-site1
+                                                            0       N
+172.18.0.211/32                   10211      2/Int.      N     tor-4.qa-site1
+                                                            0       N
+172.18.0.212/32                   10212      2/Int.      N     leaf-1.qa-site1
+                                                            0       N
+172.18.0.213/32                   10213      2/Int.      N     leaf-2.qa-site1
+                                                            0       N
+172.18.0.221/32                   10221      2/Int.      N     tor1-55A1.qa-
+                                                               site1
+                                                            0       N
+172.18.0.223/32                   10223      2/Int.      N     lef-arista.qa-
+                                                               site1
+                                                            0       N
+172.18.0.224/32                   12224      2/Int.      N     tor-1.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.225/32                   12225      2/Int.      N     tor-2.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.226/32                   12226      2/Int.      N     tor-3.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.232/32                   12232      2/Int.      N     tor-32.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.233/32                   12233      2/Int.      N     tor-31.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.234/32                   12234      2/Int.      N     tor-21.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.235/32                   12235      2/Int.      N     tor-22.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.237/32                   12237      2/Int.      N     tor-8.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.238/32                   12238      2/Int.      N     tor-9.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.239/32                   12239      2/Int.      N     tor-10.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.240/32                   12240      2/Int.      N     tor-15.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.241/32                   12241      2/Int.      N     tor-16.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.242/32                   12242      2/Int.      N     tor-13.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.243/32                   12243      2/Int.      N     tor-14.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.244/32                   12244      2/Int.      N     tor-11.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.245/32                   12245      2/Int.      N     tor-12.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.246/32                   12246      2/Int.      N     tor-18.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.247/32                   12247      2/Int.      N     tor-17.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.250/32                   12250      2/Int.      N     tor-23.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.251/32                   12251      2/Int.      N     tor-24.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.252/32                   12252      2/Int.      N     tor-20.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.253/32                   12253      2/Int.      N     tor-19.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.254/32                   12254      2/Int.      N     tor-28.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.0.255/32                   12255      2/Int.      N     tor-30.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.1.192/32                   12192      2/Int.      N     tor-25.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.1.193/32                   12193      2/Int.      N     tor-29.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.1.194/32                   12194      2/Int.      N     tor-27.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.1.195/32                   12195      2/Int.      N     tor-26.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.1.196/32                   12196      2/Int.      N     tor-34.tenlab-
+                                                               cloud
+                                                            0       N
+172.18.1.197/32                   12197      2/Int.      N     tor-33.tenlab-
+                                                               cloud
+                                                            0       N
+172.19.0.38/32                    14038      2/Int.      N     lef-1.endor
+                                                            0       N
+172.19.0.39/32                    14039      2/Int.      N     lef-2.endor
+                                                            0       N
+172.19.0.40/32                    14040      2/Int.      N     lef-1.endor
+                                                            0       N
+172.19.0.40/32                    14040      2/Int.      N     lef-2.endor
+                                                            0       N
+172.19.1.0/32                     12256      2/Int.      N     tor-31.tenlab-
+                                                               cloud
+                                                            0       N
+172.19.1.1/32                     12257      2/Int.      N     tor-32.tenlab-
+                                                               cloud
+                                                            0       N
+172.19.1.2/32                     12258      2/Int.      N     vpe1-naboo_re
+                                                            0       N
+172.19.1.3/32                     12259      2/Int.      N     vpe3-naboo_re
+                                                            0       N
+172.19.1.129/32                   12365      2/Int.      N     vbng2-naboo
+                                                            0       N
+172.19.1.130/32                   12514      2/Int.      N     vlns3-naboo
+                                                            0       N
+172.19.3.1/32                     10257      2/Int.      N     tor-1.qa-site1
+                                                            0       N
+172.19.3.2/32                     10258      2/Int.      N     tor-3.qa-site1
+                                                            0       N
+172.19.3.128/32                   10640      2/Int.      N     tor1-55A1.qa-
+                                                               site1
+                                                            0       N
+172.19.4.60/32                    14316      2/Int.      N     leaf-1.kamino
+                                                            0       N
+172.19.4.61/32                    14317      2/Int.      N     leaf-2.kamino
+                                                            0       N
+172.19.4.64/32                    14320      2/Int.      N     leaf-1.kamino
+                                                            0       N
+172.19.4.64/32                    14320      2/Int.      N     leaf-2.kamino
+                                                            0       N
+192.168.100.1/32                  12236      2/Int.      N     tor-7.tenlab-
+                                                               cloud
+                                                            0       N
+201.1.0.1/32                      2001       2/Int.      N     bl1-tatooine
+                                                            0       RnP
+201.1.0.1/32                      2001       2/Int.      N     bl2-tatooine
+                                                            0       RnP
+201.1.0.1/32                      2001       2/Int.      N     bl1-naboo
+                                                            0       RnP
+201.1.0.1/32                      2001       2/Int.      N     bl2-naboo
+                                                            0       RnP
+201.1.0.1/32                      2001       2/Int.      N     bl1-hoth
+                                                            0       RnP
+201.1.0.1/32                      2001       2/Int.      N     bl2-hoth
+                                                            0       RnP
+-------------------------------------------------------------------------------
+No. of Prefix/SIDs: 833 (196 unique)
+-------------------------------------------------------------------------------
+SRMS : Y/N  = prefix SID advertised by SR Mapping Server (Y) or not (N)
+       S    = SRMS prefix SID is selected to be programmed
+Flags: R    = Re-advertisement
+       N    = Node-SID
+       nP   = no penultimate hop POP 
+       E    = Explicit-Null  
+       V    = Prefix-SID carries a value  
+       L    = value/index has local significance  
+===============================================================================
