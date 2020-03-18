@@ -55,19 +55,13 @@ class ShowRouterIsisRoutes(ShowRouterIsisRoutesSchema):
         parsed = {}
 
         for line in out.splitlines():
-            # ignore unused line
-            if re.search(r'^(\s*?|=+|-+)$', line):
-                continue
-            if re.search(r'^(Prefix|\s{2}NextHop)', line):
-                continue
-
             m = re.search(r'^Rtr Base ISIS Instance (\d) Route Table', line)
             if m:
                 instance = m.group(1)
                 instanced = parsed[instance] = {}
                 continue
 
-            m = re.search(r'^(\S+) +(\S+) +(\S+) +(\d) +(\S+)$', line)
+            m = re.search(r'^(\d\S+) +(\S+) +(\S+) +(\d) +(\S+)$', line)
             if m:
                 prefix = m.group(1)
                 prefixd = instanced[prefix] = {
@@ -82,7 +76,7 @@ class ShowRouterIsisRoutes(ShowRouterIsisRoutesSchema):
                 prefixd['SysID/Hostname'] += m.group(1)
                 continue
 
-            m = re.search(r'^\s{3}(\S+) +(\S+) +(\S+)$', line)
+            m = re.search(r'^\s{3}(\d\S+) +(\S+) +(\S+)$', line)
             if m:
                 prefixd['NextHop'] = m.group(1)
                 prefixd['MT'] = m.group(2)
