@@ -57,14 +57,12 @@ class ShowRouterIsisRoutes(ShowRouterIsisRoutesSchema):
         for line in out.splitlines():
             m = re.search(r'^Rtr Base ISIS Instance (\d) Route Table', line)
             if m:
-                instance = m.group(1)
-                instanced = parsed[instance] = {}
+                instanced = parsed[m.group(1)] = {}
                 continue
 
             m = re.search(r'^(\d\S+) +(\S+) +(\S+) +(\d) +(\S+)$', line)
             if m:
-                prefix = m.group(1)
-                prefixd = instanced[prefix] = {
+                prefixd = instanced[m.group(1)] = {
                     'Metric': m.group(2),
                     'Lvl/Typ': m.group(3),
                     'Ver': m.group(4),
