@@ -5,6 +5,7 @@ from genie.testbed import load
 from genie.libs.parser.sros.show_system_cpu import ShowSystemCpu
 from genie.libs.parser.sros.show_card_detail import ShowCardDetail
 from genie.libs.parser.sros.show_system_memory import ShowSystemMemory
+from genie.libs.parser.sros.show_router_isis_routes import ShowRouterIsisRoutes
 
 
 logger = logging.getLogger(__name__)
@@ -162,3 +163,16 @@ class Test_FlashNotFull(aetest.Testcase):
         # set test result
         self.passed("Flash has fress space") if testpass \
             else self.failed('Flash full !!!')
+
+class Test_IsisRoutes(aetest.Testcase):
+
+    @aetest.test
+    def check_isis_routes(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show router isis routes"
+            isisrtd = ShowRouterIsisRoutes(device=dev).parse()
+
+        # set test result
+        self.passed() if testpass else self.failed()
