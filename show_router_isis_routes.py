@@ -19,13 +19,13 @@ from genie.libs.parser.utils.common import Common
 
 
 class ShowRouterIsisRoutesSchema(MetaParser):
-    """Schema for show router isis routes"""
+    """Schema for show card detail"""
     schema = {
     }
 
 
 class ShowRouterIsisRoutes(ShowRouterIsisRoutesSchema):
-    """ Parser for show router isis routes"""
+    """ Parser for show system cpu"""
 
     cli_command = 'show router isis routes'
 
@@ -60,7 +60,7 @@ class ShowRouterIsisRoutes(ShowRouterIsisRoutesSchema):
                 instanced = parsed[m.group(1)] = {}
                 continue
 
-            m = re.search(r'^(\d\S+) +(\S+) +(\S+) +(\d) +(\S+)$', line)
+            m = re.search(r'^(\d\S+) +(\S+) +(\S+) +(\d+) +(\S+)$', line)
             if m:
                 prefixd = instanced[m.group(1)] = {
                     'Metric': m.group(2),
