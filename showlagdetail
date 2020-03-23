@@ -1,0 +1,304 @@
+
+===============================================================================
+LAG Details
+===============================================================================
+-------------------------------------------------------------------------------
+LAG 7
+-------------------------------------------------------------------------------
+Description        : To CR02-Nokia-NGCore LAG 7
+-------------------------------------------------------------------------------
+Details
+-------------------------------------------------------------------------------
+Lag-id              : 7                     Mode                 : network
+Adm                 : up                    Opr                  : up
+Thres. Last Cleared : 02/10/2020 08:01:04   Thres. Exceeded Cnt  : 0
+Dynamic Cost        : false                 Encap Type           : null
+Configured Address  : 10:e8:78:3e:51:48     Lag-IfIndex          : 1342177287
+Hardware Address    : 10:e8:78:3e:51:48
+Per-Link-Hash       : disabled              
+Include-Egr-Hash-Cfg: disabled              Forced               : -
+Per FP Ing Queuing  : disabled              Per FP Egr Queuing   : disabled
+Per FP SAP Instance : disabled              
+Access Bandwidth    : N/A                   Access Booking Factor: 100
+Access Available BW : 0                     
+Access Booked BW    : 0                     
+LACP                : enabled               Mode                 : active
+LACP Transmit Intvl : fast                  LACP xmit stdby      : enabled
+Selection Criteria  : highest-count         Slave-to-partner     : disabled
+MUX control         : coupled               
+Subgrp hold time    : 0.0 sec               Remaining time       : 0.0 sec
+Subgrp selected     : 1                     Subgrp candidate     : -
+Subgrp count        : 1                     
+System Id           : 10:e8:78:3e:50:01     System Priority      : 32768
+Admin Key           : 7                     Oper Key             : 7
+Prtr System Id      : 10:e8:78:3e:40:01     Prtr System Priority : 32768
+Prtr Oper Key       : 7                     
+Standby Signaling   : lacp                  
+Port hashing        : port-speed            Port weight speed    : 0 gbps
+Ports Up            : 1                     
+Weights Up          : 1                     Hash-Weights Up      : 100
+Monitor oper group  : N/A
+
+-------------------------------------------------------------------------------
+Port-id        Adm     Act/Stdby Opr     Primary   Sub-group     Forced  Prio 
+-------------------------------------------------------------------------------
+1/1/c10/1      up      active    up      yes       1             -       32768
+
+-------------------------------------------------------------------------------
+Port-id        Role      Exp   Def   Dist  Col   Syn   Aggr  Timeout  Activity
+-------------------------------------------------------------------------------
+1/1/c10/1      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c10/1      partner   No    No    Yes   Yes   Yes   Yes   Yes      Yes
+
+-------------------------------------------------------------------------------
+LAG 53
+-------------------------------------------------------------------------------
+Description        : To COTKON04R07 LAG 55
+-------------------------------------------------------------------------------
+Details
+-------------------------------------------------------------------------------
+Lag-id              : 53                    Mode                 : network
+Adm                 : up                    Opr                  : up
+Thres. Last Cleared : 02/10/2020 08:01:04   Thres. Exceeded Cnt  : 0
+Dynamic Cost        : false                 Encap Type           : null
+Configured Address  : 10:e8:78:3e:51:76     Lag-IfIndex          : 1342177333
+Hardware Address    : 10:e8:78:3e:51:76
+Per-Link-Hash       : disabled              
+Include-Egr-Hash-Cfg: disabled              Forced               : -
+Per FP Ing Queuing  : disabled              Per FP Egr Queuing   : disabled
+Per FP SAP Instance : disabled              
+Access Bandwidth    : N/A                   Access Booking Factor: 100
+Access Available BW : 0                     
+Access Booked BW    : 0                     
+LACP                : enabled               Mode                 : active
+LACP Transmit Intvl : fast                  LACP xmit stdby      : enabled
+Selection Criteria  : highest-count         Slave-to-partner     : disabled
+MUX control         : coupled               
+Subgrp hold time    : 0.0 sec               Remaining time       : 0.0 sec
+Subgrp selected     : 1                     Subgrp candidate     : -
+Subgrp count        : 1                     
+System Id           : 10:e8:78:3e:50:01     System Priority      : 32768
+Admin Key           : 53                    Oper Key             : 53
+Prtr System Id      : 00:23:3e:58:0a:50     Prtr System Priority : 32768
+Prtr Oper Key       : 53                    
+Standby Signaling   : lacp                  
+Port hashing        : port-speed            Port weight speed    : 0 gbps
+Ports Up            : 2                     
+Weights Up          : 2                     Hash-Weights Up      : 20
+Monitor oper group  : N/A
+
+-------------------------------------------------------------------------------
+Port-id        Adm     Act/Stdby Opr     Primary   Sub-group     Forced  Prio 
+-------------------------------------------------------------------------------
+1/1/c28/3      up      active    up      yes       1             -       32768
+1/1/c28/4      up      active    up                1             -       32768
+
+-------------------------------------------------------------------------------
+Port-id        Role      Exp   Def   Dist  Col   Syn   Aggr  Timeout  Activity
+-------------------------------------------------------------------------------
+1/1/c28/3      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c28/3      partner   No    No    Yes   Yes   Yes   Yes   Yes      No
+1/1/c28/4      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c28/4      partner   No    No    Yes   Yes   Yes   Yes   Yes      No
+
+-------------------------------------------------------------------------------
+LAG 101
+-------------------------------------------------------------------------------
+Description        : To bx2-rohan-BE101
+-------------------------------------------------------------------------------
+Details
+-------------------------------------------------------------------------------
+Lag-id              : 101                   Mode                 : network
+Adm                 : up                    Opr                  : up
+Thres. Last Cleared : 02/10/2020 08:01:04   Thres. Exceeded Cnt  : 0
+Dynamic Cost        : false                 Encap Type           : null
+Configured Address  : 10:e8:78:3e:51:a6     Lag-IfIndex          : 1342177381
+Hardware Address    : 10:e8:78:3e:51:a6
+Per-Link-Hash       : disabled              
+Include-Egr-Hash-Cfg: disabled              Forced               : -
+Per FP Ing Queuing  : disabled              Per FP Egr Queuing   : disabled
+Per FP SAP Instance : disabled              
+Access Bandwidth    : N/A                   Access Booking Factor: 100
+Access Available BW : 0                     
+Access Booked BW    : 0                     
+LACP                : enabled               Mode                 : active
+LACP Transmit Intvl : fast                  LACP xmit stdby      : enabled
+Selection Criteria  : highest-count         Slave-to-partner     : disabled
+MUX control         : coupled               
+Subgrp hold time    : 0.0 sec               Remaining time       : 0.0 sec
+Subgrp selected     : 1                     Subgrp candidate     : -
+Subgrp count        : 1                     
+System Id           : 10:e8:78:3e:50:01     System Priority      : 32768
+Admin Key           : 101                   Oper Key             : 101
+Prtr System Id      : 00:c1:64:62:0d:74     Prtr System Priority : 32768
+Prtr Oper Key       : 101                   
+Standby Signaling   : lacp                  
+Port hashing        : port-speed            Port weight speed    : 0 gbps
+Ports Up            : 2                     
+Weights Up          : 2                     Hash-Weights Up      : 200
+Monitor oper group  : N/A
+
+-------------------------------------------------------------------------------
+Port-id        Adm     Act/Stdby Opr     Primary   Sub-group     Forced  Prio 
+-------------------------------------------------------------------------------
+1/1/c13/1      up      active    up      yes       1             -       32768
+1/1/c14/1      up      active    up                1             -       32768
+
+-------------------------------------------------------------------------------
+Port-id        Role      Exp   Def   Dist  Col   Syn   Aggr  Timeout  Activity
+-------------------------------------------------------------------------------
+1/1/c13/1      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c13/1      partner   No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c14/1      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c14/1      partner   No    No    Yes   Yes   Yes   Yes   Yes      Yes
+
+-------------------------------------------------------------------------------
+LAG 150
+-------------------------------------------------------------------------------
+Description        : To tcore4-moria BE150
+-------------------------------------------------------------------------------
+Details
+-------------------------------------------------------------------------------
+Lag-id              : 150                   Mode                 : network
+Adm                 : down                  Opr                  : down
+Thres. Last Cleared : 02/10/2020 08:01:04   Thres. Exceeded Cnt  : 0
+Dynamic Cost        : false                 Encap Type           : null
+Configured Address  : 10:e8:78:3e:51:d7     Lag-IfIndex          : 1342177430
+Hardware Address    : 10:e8:78:3e:51:d7
+Per-Link-Hash       : disabled              
+Include-Egr-Hash-Cfg: disabled              Forced               : -
+Per FP Ing Queuing  : disabled              Per FP Egr Queuing   : disabled
+Per FP SAP Instance : disabled              
+Access Bandwidth    : N/A                   Access Booking Factor: 100
+Access Available BW : 0                     
+Access Booked BW    : 0                     
+LACP                : enabled               Mode                 : active
+LACP Transmit Intvl : fast                  LACP xmit stdby      : enabled
+Selection Criteria  : highest-count         Slave-to-partner     : disabled
+MUX control         : coupled               
+Subgrp hold time    : 0.0 sec               Remaining time       : 0.0 sec
+Subgrp selected     : 1                     Subgrp candidate     : -
+Subgrp count        : 1                     
+System Id           : 10:e8:78:3e:50:01     System Priority      : 32768
+Admin Key           : 150                   Oper Key             : 150
+Prtr System Id      : 00:1a:6d:bd:3b:05     Prtr System Priority : 32768
+Prtr Oper Key       : 150                   
+Standby Signaling   : lacp                  
+Port hashing        : port-speed            Port weight speed    : 0 gbps
+Ports Up            : 0                     
+Weights Up          : 0                     Hash-Weights Up      : 0
+Monitor oper group  : N/A
+
+-------------------------------------------------------------------------------
+Port-id        Adm     Act/Stdby Opr     Primary   Sub-group     Forced  Prio 
+-------------------------------------------------------------------------------
+1/1/c28/1      up      active    down    yes       1             -       32768
+1/1/c28/2      up      active    down              1             -       32768
+
+-------------------------------------------------------------------------------
+Port-id        Role      Exp   Def   Dist  Col   Syn   Aggr  Timeout  Activity
+-------------------------------------------------------------------------------
+1/1/c28/1      actor     No    No    No    No    No    Yes   Yes      Yes
+1/1/c28/1      partner   No    No    Yes   Yes   No    Yes   Yes      Yes
+1/1/c28/2      actor     No    No    No    No    No    Yes   Yes      Yes
+1/1/c28/2      partner   No    No    Yes   Yes   No    Yes   Yes      Yes
+
+-------------------------------------------------------------------------------
+LAG 151
+-------------------------------------------------------------------------------
+Description        : To CR01-Cisco-NGCore BE151
+-------------------------------------------------------------------------------
+Details
+-------------------------------------------------------------------------------
+Lag-id              : 151                   Mode                 : network
+Adm                 : up                    Opr                  : up
+Thres. Last Cleared : 02/10/2020 08:01:04   Thres. Exceeded Cnt  : 0
+Dynamic Cost        : false                 Encap Type           : null
+Configured Address  : 10:e8:78:3e:51:d8     Lag-IfIndex          : 1342177431
+Hardware Address    : 10:e8:78:3e:51:d8
+Per-Link-Hash       : disabled              
+Include-Egr-Hash-Cfg: disabled              Forced               : -
+Per FP Ing Queuing  : disabled              Per FP Egr Queuing   : disabled
+Per FP SAP Instance : disabled              
+Access Bandwidth    : N/A                   Access Booking Factor: 100
+Access Available BW : 0                     
+Access Booked BW    : 0                     
+LACP                : enabled               Mode                 : active
+LACP Transmit Intvl : fast                  LACP xmit stdby      : enabled
+Selection Criteria  : highest-count         Slave-to-partner     : disabled
+MUX control         : coupled               
+Subgrp hold time    : 0.0 sec               Remaining time       : 0.0 sec
+Subgrp selected     : 1                     Subgrp candidate     : -
+Subgrp count        : 1                     
+System Id           : 10:e8:78:3e:50:01     System Priority      : 32768
+Admin Key           : 151                   Oper Key             : 151
+Prtr System Id      : 4c:71:0d:53:3c:04     Prtr System Priority : 32768
+Prtr Oper Key       : 151                   
+Standby Signaling   : lacp                  
+Port hashing        : port-speed            Port weight speed    : 0 gbps
+Ports Up            : 2                     
+Weights Up          : 2                     Hash-Weights Up      : 200
+Monitor oper group  : N/A
+
+-------------------------------------------------------------------------------
+Port-id        Adm     Act/Stdby Opr     Primary   Sub-group     Forced  Prio 
+-------------------------------------------------------------------------------
+1/1/c18/1      up      active    up      yes       1             -       32768
+1/1/c19/1      up      active    up                1             -       32768
+
+-------------------------------------------------------------------------------
+Port-id        Role      Exp   Def   Dist  Col   Syn   Aggr  Timeout  Activity
+-------------------------------------------------------------------------------
+1/1/c18/1      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c18/1      partner   No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c19/1      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c19/1      partner   No    No    Yes   Yes   Yes   Yes   Yes      Yes
+
+-------------------------------------------------------------------------------
+LAG 152
+-------------------------------------------------------------------------------
+Description        : To CR02-Cisco-NGCore BE152
+-------------------------------------------------------------------------------
+Details
+-------------------------------------------------------------------------------
+Lag-id              : 152                   Mode                 : network
+Adm                 : up                    Opr                  : up
+Thres. Last Cleared : 02/10/2020 08:01:04   Thres. Exceeded Cnt  : 0
+Dynamic Cost        : false                 Encap Type           : null
+Configured Address  : 10:e8:78:3e:51:d9     Lag-IfIndex          : 1342177432
+Hardware Address    : 10:e8:78:3e:51:d9
+Per-Link-Hash       : disabled              
+Include-Egr-Hash-Cfg: disabled              Forced               : -
+Per FP Ing Queuing  : disabled              Per FP Egr Queuing   : disabled
+Per FP SAP Instance : disabled              
+Access Bandwidth    : N/A                   Access Booking Factor: 100
+Access Available BW : 0                     
+Access Booked BW    : 0                     
+LACP                : enabled               Mode                 : active
+LACP Transmit Intvl : fast                  LACP xmit stdby      : enabled
+Selection Criteria  : highest-count         Slave-to-partner     : disabled
+MUX control         : coupled               
+Subgrp hold time    : 0.0 sec               Remaining time       : 0.0 sec
+Subgrp selected     : 1                     Subgrp candidate     : -
+Subgrp count        : 1                     
+System Id           : 10:e8:78:3e:50:01     System Priority      : 32768
+Admin Key           : 152                   Oper Key             : 152
+Prtr System Id      : 4c:71:0d:53:18:05     Prtr System Priority : 32768
+Prtr Oper Key       : 152                   
+Standby Signaling   : lacp                  
+Port hashing        : port-speed            Port weight speed    : 0 gbps
+Ports Up            : 1                     
+Weights Up          : 1                     Hash-Weights Up      : 100
+Monitor oper group  : N/A
+
+-------------------------------------------------------------------------------
+Port-id        Adm     Act/Stdby Opr     Primary   Sub-group     Forced  Prio 
+-------------------------------------------------------------------------------
+1/1/c20/1      up      active    up      yes       1             -       32768
+
+-------------------------------------------------------------------------------
+Port-id        Role      Exp   Def   Dist  Col   Syn   Aggr  Timeout  Activity
+-------------------------------------------------------------------------------
+1/1/c20/1      actor     No    No    Yes   Yes   Yes   Yes   Yes      Yes
+1/1/c20/1      partner   No    No    Yes   Yes   Yes   Yes   Yes      Yes
+===============================================================================
