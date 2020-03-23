@@ -6,7 +6,9 @@ from genie.libs.parser.sros.show_system_cpu import ShowSystemCpu
 from genie.libs.parser.sros.show_card_detail import ShowCardDetail
 from genie.libs.parser.sros.show_system_memory import ShowSystemMemory
 from genie.libs.parser.sros.show_router_isis_routes import ShowRouterIsisRoutes
-
+from genie.libs.parser.sros.show_router_isis_database import ShowRouterIsisDatabase
+from genie.libs.parser.sros.show_router_isis_prefix_sids import ShowRouterIsisPrefixSids
+from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
 
 logger = logging.getLogger(__name__)
 
@@ -164,6 +166,20 @@ class Test_FlashNotFull(aetest.Testcase):
         self.passed("Flash has fress space") if testpass \
             else self.failed('Flash full !!!')
 
+class Test_IsisDatabase(aetest.Testcase):
+
+    @aetest.test
+    def check_isis_database(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show router isis database"
+            isisdbd = ShowRouterIsisDatabase(device=dev).parse()
+            # TODO verify isis database
+
+        # set test result
+        self.passed() if testpass else self.failed()
+
 class Test_IsisRoutes(aetest.Testcase):
 
     @aetest.test
@@ -173,6 +189,35 @@ class Test_IsisRoutes(aetest.Testcase):
         for dev in testbed:
             # parse output of "show router isis routes"
             isisrtd = ShowRouterIsisRoutes(device=dev).parse()
+            # TODO verify isis routes
+
+        # set test result
+        self.passed() if testpass else self.failed()
+
+class Test_IsisPrefixSids(aetest.Testcase):
+
+    @aetest.test
+    def check_isis_prefixsids(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show router isis prefix-sids"
+            isispfxd = ShowRouterIsisPrefixSids(device=dev).parse()
+            # TODO verify isis prefix-sids
+
+        # set test result
+        self.passed() if testpass else self.failed()
+
+class Test_Bfd_Session(aetest.Testcase):
+
+    @aetest.test
+    def check_bfd_session(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show router bfd session"
+            isispfxd = ShowRouterBfdSession(device=dev).parse()
+            # TODO verify bfd session
 
         # set test result
         self.passed() if testpass else self.failed()
