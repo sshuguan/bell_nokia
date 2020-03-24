@@ -9,6 +9,7 @@ from genie.libs.parser.sros.show_router_isis_routes import ShowRouterIsisRoutes
 from genie.libs.parser.sros.show_router_isis_database import ShowRouterIsisDatabase
 from genie.libs.parser.sros.show_router_isis_prefix_sids import ShowRouterIsisPrefixSids
 from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
+from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
 
 logger = logging.getLogger(__name__)
 
@@ -216,7 +217,9 @@ class Test_Bfd_Session(aetest.Testcase):
         testpass = True
         for dev in testbed:
             # parse output of "show router bfd session"
+            # parse output of "show lag detail"
             isispfxd = ShowRouterBfdSession(device=dev).parse()
+            lagd = ShowLagDetail(device=dev).parse()
             # TODO verify bfd session
 
         # set test result
