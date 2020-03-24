@@ -19,13 +19,13 @@ from genie.libs.parser.utils.common import Common
 
 
 class ShowRouterIsisDatabaseSchema(MetaParser):
-    """Schema for show card detail"""
+    """Schema for show router isis database"""
     schema = {
     }
 
 
 class ShowRouterIsisDatabase(ShowRouterIsisDatabaseSchema):
-    """ Parser for show system cpu"""
+    """ Parser for show router isis database"""
 
     cli_command = 'show router isis database'
 
