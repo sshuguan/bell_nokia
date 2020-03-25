@@ -10,6 +10,7 @@ from genie.libs.parser.sros.show_router_isis_database import ShowRouterIsisDatab
 from genie.libs.parser.sros.show_router_isis_prefix_sids import ShowRouterIsisPrefixSids
 from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
 from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
+from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
 
 logger = logging.getLogger(__name__)
 
@@ -217,10 +218,24 @@ class Test_Bfd_Session(aetest.Testcase):
         testpass = True
         for dev in testbed:
             # parse output of "show router bfd session"
-            # parse output of "show lag detail"
             isispfxd = ShowRouterBfdSession(device=dev).parse()
-            lagd = ShowLagDetail(device=dev).parse()
             # TODO verify bfd session
+
+        # set test result
+        self.passed() if testpass else self.failed()
+
+class Test_Ecmp_Over_lag(aetest.Testcase):
+
+    @aetest.test
+    def check_ecmp_over_lag(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show lag detail"
+            # parse output of "show lag statistics"
+            lagd = ShowLagDetail(device=dev).parse()
+            lagstd = ShowLagStatistics(device=dev).parse()
+            # TODO verify lag session
 
         # set test result
         self.passed() if testpass else self.failed()
