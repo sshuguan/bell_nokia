@@ -36,15 +36,15 @@ class ShowRouterIsisDatabase(ShowRouterIsisDatabaseSchema):
             out = output
 
             # ===============================================================================
-            # Rtr Base ISIS Instance 0 Database 
+            # Rtr Base ISIS Instance 0 Database
             # ===============================================================================
             # LSP ID                                  Sequence  Checksum Lifetime Attributes
             # -------------------------------------------------------------------------------
-            # 
+            #
             # Displaying Level 1 database
             # -------------------------------------------------------------------------------
             # Level (1) LSP Count : 0
-            # 
+            #
             # Displaying Level 2 database
             # -------------------------------------------------------------------------------
             # CR01-Nokia-NGCore.00-00                 0x133     0x7bb9   61280    L1L2
@@ -58,39 +58,31 @@ class ShowRouterIsisDatabase(ShowRouterIsisDatabaseSchema):
             # tcore4-rohan.00-02                      0x9f      0x746d   52396    L1L2
             # vpce2-tatooine.00-00                    0x3c      0x78bf   43278    L1L2
 
-
         parsed = {}
-
-        # split <out> into list
-        s0 = re.compile(r'\r?\n=+\r?\nCard \w+\r?\n=+\r?\n')
-        cardL = s0.split(out)
 
         for line in out.splitlines():
             line = line.strip()
-            if not line or re.search(r'^(=+|-+|LSP ID.*)$', line):
-                continue
 
             m = re.search(r'^Rtr Base ISIS Instance +(\d) Database$', line)
             if m:
-                instance = m.group(1)
-                parsed[instance] = {}
+                instanced = parsed[m.group(1)] = {}
                 continue
-            
+
             m = re.search(r'^Displaying Level +(\d) database$', line)
             if m:
-                level = m.group(1)
-                parsed[instance][level] = {}
+                leveld = instanced[m.group(1)] = {}
                 continue
-            
+
             m = re.search(r'^Level +\(\d\) (LSP Count) +: +(\d+)$', line)
             if m:
-                parsed[instance][level][m.group(1)] = m.group(2)
+                leveld[m.group(1)] = m.group(2)
                 continue
-            
-            m = re.search(r'(\S+) +(0x\w+) +(0x\w+) +([\d()]+) *(\b.*)?$', line)
+
+            m = re.search(
+                r'^(\S+) +(0x\w+) +(0x\w+) +([\d()]+) *(\b.*)?$', line)
             if m:
-                parsed[instance][level][m.group(1)] = {
-                    'sequence':m.group(2), 'checksum':m.group(3),
-                    'lifetime':m.group(4), 'attributes':m.group(5)}
+                leveld[m.group(1)] = {
+                    'sequence': m.group(2), 'checksum': m.group(3),
+                    'lifetime': m.group(4), 'attributes': m.group(5)}
 
         return parsed
