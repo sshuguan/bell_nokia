@@ -11,6 +11,7 @@ from genie.libs.parser.sros.show_router_isis_prefix_sids import ShowRouterIsisPr
 from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
 from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
 from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
+from genie.libs.parser.sros.show_router_mpls_labels_summary import ShowRouterMplsLabelsSummary
 
 logger = logging.getLogger(__name__)
 
@@ -236,6 +237,21 @@ class Test_Ecmp_Over_lag(aetest.Testcase):
             lagd = ShowLagDetail(device=dev).parse()
             lagstd = ShowLagStatistics(device=dev).parse()
             # TODO verify lag session
+
+        # set test result
+        self.passed() if testpass else self.failed()
+        
+        
+class Test_Router_Mpls_Labels(aetest.Testcase):
+
+    @aetest.test
+    def check_router_mpls_labels(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show router mpls-labels summary"
+            mplslabelsummary = ShowRouterMplsLabelsSummary(device=dev).parse()
+            # TODO verify mpls labels
 
         # set test result
         self.passed() if testpass else self.failed()

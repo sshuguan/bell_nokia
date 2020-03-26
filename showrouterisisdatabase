@@ -1,0 +1,111 @@
+
+===============================================================================
+Rtr Base ISIS Instance 0 Database 
+===============================================================================
+LSP ID                                  Sequence  Checksum Lifetime Attributes
+-------------------------------------------------------------------------------
+
+Displaying Level 1 database
+-------------------------------------------------------------------------------
+Level (1) LSP Count : 0
+
+Displaying Level 2 database
+-------------------------------------------------------------------------------
+CR01-Nokia-NGCore.00-00                 0x1a2     0xfd50   54668    L1L2
+CR02-Nokia-NGCore.00-00                 0x83      0xa207   48446    L1L2
+newbx1_RE0.00-00                        0xfc      0xb09d   43151    L1L2
+core1-tatooine.00-00                    0xa5dd    0xa19b   49262    L1L2
+core2-tatooine.00-00                    0xa446    0xec98   45864    L1L2
+vpce1-tatooine.00-00                    0xf       0x6dcb   64809    L1L2
+tcore4-rohan.00-00                      0x5b37    0x59f3   62972    L1L2
+tcore4-rohan.00-01                      0xf9      0xe882   54139    L1L2
+tcore4-rohan.00-02                      0x237     0xa658   65497    L1L2
+vpce2-tatooine.00-00                    0x91      0xcd15   54816    L1L2
+pe1-tatooine.00-00                      0x333     0x1d3    31980    L1L2
+bl1-tatooine.00-00                      0x1e8a8   0xba2f   57654    L1L2
+bl1-tatooine.00-01                      0x577     0xe352   60949    L1L2
+bl1-tatooine.00-02                      0x47a     0x371c   62313    L1L2
+bl2-tatooine.00-00                      0x1d8af   0xa265   63407    L1L2
+bl2-tatooine.00-01                      0x4f23    0x99b7   49734    L1L2
+bl2-tatooine.00-02                      0x9433    0x6080   62313    L1L2
+spine1-tatooine.00-00                   0xa484    0x8f72   49042    L1L2
+spine2-tatooine.00-00                   0xa24b    0xc1c8   63993    L1L2
+tcore3-rohan.00-00                      0x48c     0x5fea   58807    L1L2 OV
+dis17-rohan_RE1.00-00                   0x305     0x2a4    54780    L1L2
+tcore4-moria.00-00                      0x2ef     0x719b   53680    L1L2
+CR01-Cisco-NGCore.00-00                 0xb3      0xc521   41683    L1L2
+CR01-Cisco-NGCore.fe-fe                 0x0       0x0      (54139)  
+CR02-Cisco-NGCore.00-00                 0x1ce     0xd8b4   41684    L1L2
+tcore3-moria.00-00                      0x33f     0xa019   56315    L1L2
+bx2-rohan.00-00                         0xeb      0xd5ca   40478    L1L2
+dis9-rohan.00-00                        0x2cc     0xbc1c   59820    L1L2
+tcore1-mordor.00-00                     0x2e0     0xe6e5   56492    L1L2
+bl1-naboo.00-00                         0x10a7f   0x59e0   62492    L1L2 OV
+bl1-naboo.00-01                         0xc88d    0x0      (62492)  L1L2
+bl1-naboo.00-02                         0x424     0x0      (62492)  L1L2
+bl1-naboo.00-03                         0x15f41   0x0      (62492)  L1L2
+tcore1-lorien.00-00                     0x2e7     0x953f   43135    L1L2
+bl2-naboo.00-00                         0x8f13    0x6975   54303    L1L2
+bl2-naboo.00-01                         0x7a78    0x7f58   45511    L1L2
+bl2-naboo.00-02                         0x131e7   0xa36e   64569    L1L2
+bl2-naboo.00-03                         0x4c9     0xfab2   62972    L1L2
+bl1-hoth.00-00                          0x50e3    0xf2fc   63396    L1L2
+bl1-hoth.00-01                          0x14b87   0x6f59   62689    L1L2
+bl1-hoth.00-02                          0x584     0xdf3d   48676    L1L2
+bl2-hoth.00-00                          0x5111    0x35e1   63396    L1L2
+bl2-hoth.00-02                          0x2964    0xaaf2   39528    L1L2
+bl2-hoth.00-03                          0x4dc     0xd97    54476    L1L2
+tcore2-lorien.00-00                     0x2dd     0x7537   44875    L1L2
+tcore2-mordor.00-00                     0x2e1     0xf7a7   56974    L1L2
+tor1-tatooine.00-00                     0x342     0xeba7   63993    L1L2
+tor2-tatooine.00-00                     0x2f3     0x6f7    63458    L1L2
+tor-1.qa-site1.00-00                    0x34a     0xbd48   62712    L1L2
+tor-2.qa-site1.00-00                    0x4c7     0xcb3a   62711    L1L2
+tor-3.qa-site1.00-00                    0x4b9     0x4f60   62705    L1L2
+tor-4.qa-site1.00-00                    0xf9      0x7cbc   62704    L1L2
+leaf-1.qa-site1.00-00                   0x854     0x876c   59300    L1L2
+leaf-2.qa-site1.00-00                   0x192e    0x18a4   62815    L1L2
+tor1-55A1.qa-site1.00-00                0x110     0x9f99   62720    L1L2
+lef-arista.qa-site1.00-00               0xd9c52   0x3fa1   65533    L1L2
+tor-1.tenlab-cloud.00-00                0xc0c     0xb91e   58827    L1L2
+tor-2.tenlab-cloud.00-00                0x242     0xeeb7   58852    L1L2
+tor-3.tenlab-cloud.00-00                0xa3f     0x73aa   58846    L1L2
+tor-4.tenlab-cloud.00-00                0x36      0xb6bc   58845    L1L2
+tor-32.tenlab-cloud.00-00               0x58b     0x5443   58853    L1L2
+tor-31.tenlab-cloud.00-00               0x4f7     0x53f0   58845    L1L2
+tor-21.tenlab-cloud.00-00               0x40d     0x7963   58827    L1L2
+tor-22.tenlab-cloud.00-00               0xd1      0x4095   58827    L1L2
+tor-7.tenlab-cloud.00-00                0xabd     0x511f   58838    L1L2
+tor-8.tenlab-cloud.00-00                0xa39     0xbc04   58838    L1L2
+tor-9.tenlab-cloud.00-00                0x383     0x47d0   58835    L1L2
+tor-10.tenlab-cloud.00-00               0x339     0x55cc   58837    L1L2
+tor-15.tenlab-cloud.00-00               0x338     0xc0a3   58827    L1L2
+tor-16.tenlab-cloud.00-00               0x32c     0x77da   58826    L1L2
+tor-13.tenlab-cloud.00-00               0x342     0x9399   58829    L1L2
+tor-14.tenlab-cloud.00-00               0x33e     0x629a   58827    L1L2
+tor-11.tenlab-cloud.00-00               0x4ca     0x65f0   58831    L1L2
+tor-12.tenlab-cloud.00-00               0x62c     0x3542   58829    L1L2
+tor-18.tenlab-cloud.00-00               0x2a5     0x380e   58827    L1L2
+tor-17.tenlab-cloud.00-00               0x2aa     0x8f95   58827    L1L2
+tor-23.tenlab-cloud.00-00               0x1d5     0x2d3f   58827    L1L2
+tor-24.tenlab-cloud.00-00               0x1d4     0x73db   58827    L1L2
+tor-20.tenlab-cloud.00-00               0x25f     0xcfcc   58827    L1L2
+tor-19.tenlab-cloud.00-00               0x202     0xaadf   58826    L1L2
+tor-28.tenlab-cloud.00-00               0x1a5     0xe96d   58844    L1L2
+tor-30.tenlab-cloud.00-00               0xb6      0xbf63   58826    L1L2
+tor-25.tenlab-cloud.00-00               0x1aa     0xb11c   58843    L1L2
+tor-29.tenlab-cloud.00-00               0x1ad     0xb908   58827    L1L2
+tor-27.tenlab-cloud.00-00               0x1af     0xc05d   58826    L1L2
+tor-26.tenlab-cloud.00-00               0x1ab     0x3137   58828    L1L2
+tor-34.tenlab-cloud.00-00               0xf5      0x4203   58811    L1L2
+tor-33.tenlab-cloud.00-00               0xf9      0xeeff   58807    L1L2
+lef-1.endor.00-00                       0x95b     0x390d   63396    L1L2
+lef-2.endor.00-00                       0x96b     0x3de5   63396    L1L2
+vpe1-naboo_re.00-00                     0x97b5    0xd236   64853    L1L2 OV
+vpe3-naboo_re.00-00                     0x97a1    0xe15d   64727    L1L2 OV
+vbng2-naboo.00-00                       0x8bd6    0x17d    65206    L1L2 OV
+vlns3-naboo.00-00                       0xdccf    0x742f   65028    L1L2 OV
+leaf-1.kamino.00-00                     0x7b3     0x7e81   63396    L1L2
+leaf-2.kamino.00-00                     0x8dd     0x11a7   63394    L1L2
+Level (2) LSP Count : 96
+===============================================================================
