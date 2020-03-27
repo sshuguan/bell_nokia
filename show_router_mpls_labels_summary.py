@@ -47,20 +47,11 @@ class ShowRouterMplsLabelsSummary(ShowRouterMplsLabelsSummarySchema):
         parsed = {}
 
         for line in out.splitlines():
-            line = line.strip()
-
-            m = re.search(r'^Mpls-Labels Summary', line)
-            if m:
-                instance = m.group(1)
-                parsed[instance] = {}
-                continue
-            
             # add key:value in dict when hitting line such as
             # "Static Label Range             : 15968"
             # "Segment Routing End Label      : 81534"
             m = re.search(r'^\b(.+)\b +: +\b(.+)\b$', line)
-            if m:            
+            if m:
                 parsed[m.group(1)] = m.group(2)
-                continue
 
         return parsed
