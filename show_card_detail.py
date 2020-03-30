@@ -32,7 +32,7 @@ class ShowCardDetail(ShowCardDetailSchema):
     def cli(self, output=None):
         if output is None:
             out = self.device.execute(self.cli_command)
-        elif re.search(r'^[\dAB]$', output):
+        elif re.search(r'^[\dAB]$', str(output)):
             self.cli_command = 'show card %s detail' % output
             out = self.device.execute(self.cli_command)
         else:

@@ -27,12 +27,12 @@ class ShowLogSyslogIdSchema(MetaParser):
 class ShowLogSyslogId(ShowLogSyslogIdSchema):
     """ Parser for show log syslog <id>"""
 
-    cli_command = 'show log syslog %d'
+    cli_command = 'show log syslog %s'
 
     def cli(self, output=None):
         if output is None:
             out = self.device.execute(self.cli_command % 1)
-        elif re.search(r'^\d$', output):
+        elif re.search(r'^\d$', str(output)):
             out = self.device.execute(self.cli_command % output)
         else:
             out = output
