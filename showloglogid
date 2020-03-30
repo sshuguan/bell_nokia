@@ -1,0 +1,18 @@
+
+==============================================================================
+Event Logs
+==============================================================================
+Log Source    Filter Admin Oper       Logged     Dropped Dest       Dest Size
+Id            Id     State State                         Type       Id   
+------------------------------------------------------------------------------
+  1 M S C     none   up    up            961           1 syslog     1     N/A
+  2 M S C     none   up    up            955           1 syslog     2     N/A
+ 10 M S C     none   up    up            979           0 file       10    N/A
+ 66 D         none   up    up              0           0 memory           100
+ 75 D         none   up    up              0           0 file       75    N/A
+ 97 M S C     none   up    up            973           0 file       97    N/A
+ 98 M S C     none   up    up            969           0 file       98    N/A
+ 99 M         none   up    up            424           0 memory           500
+100 M         1001   up    up             20         404 memory           500
+101 M S C     none   up    up           1161           1 netconf          500
+==============================================================================

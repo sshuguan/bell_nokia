@@ -12,7 +12,7 @@ from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
 from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
 from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
 from genie.libs.parser.sros.show_router_mpls_labels_summary import ShowRouterMplsLabelsSummary
-
+from genie.libs.parser.sros.show_log_syslog_id import ShowLogSyslogId
 logger = logging.getLogger(__name__)
 
 # convert "123,456,789" to 123456789
@@ -251,6 +251,22 @@ class Test_Router_Mpls_Labels(aetest.Testcase):
         for dev in testbed:
             # parse output of "show router mpls-labels summary"
             mplslabelsummary = ShowRouterMplsLabelsSummary(device=dev).parse()
+            # TODO verify mpls labels
+
+        # set test result
+        self.passed() if testpass else self.failed()
+
+class Test_Log_Syslog_Id(aetest.Testcase):
+
+    @aetest.test
+    def check_log_syslog_id(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show log syslog <id=1>"
+            syslogd = ShowLogSyslogId(device=dev).parse()
+            import pdb; pdb.set_trace()
+            
             # TODO verify mpls labels
 
         # set test result
