@@ -43,6 +43,16 @@ class CommonSetup(aetest.CommonSetup):
             dev.mdcli_execute("environment more false")
             logger.info('Device %s connected!' % dev.name)
 
+class Test_Ntp_Peer_Up(aetest.Testcase):
+    @aetest.test
+    def check_ntp_peer_up(self, testbed):
+        testpass = True
+        for dev in testbed:
+            ntpd = dev.parse("show system ntp all")
+            import pdb; pdb.set_trace()
+            pass
+
+
 class Test_Log_Syslog(aetest.Testcase):
 
     @aetest.test
