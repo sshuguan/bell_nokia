@@ -91,10 +91,10 @@ class ShowSystemNtpAll(ShowSystemNtpAllSchema):
         # reject                    STEP            -  srvr  -  64   ........  0.000
         p6 = re.compile(r'(?P<state>\S+) +(?P<refid>\S+) '
                         r'+(?P<stratum>[-\d]) +(?P<type>\S+) '
-                        r'+(?P<a>[-]) +(?P<poll>\d+) +(?P<reach>\S+) '
+                        r'+(?P<a>[\S]) +(?P<poll>\d+) +(?P<reach>\S+) '
                         r'+(?P<offset>[-.\d]+)')
-        # Base           172.16.189.64
-        p7 = re.compile(r'(?P<router>\S+) +(?P<remote>[.\d]+)')
+        # Base           172.16.189.64 (or 2001:4888:a2f:4025:135:228:0:242)
+        p7 = re.compile(r'(?P<router>\S+) +(?P<remote>[.:0-9a-fA-F]+)$')
 
         for line in out.splitlines():
             line = line.strip()
@@ -132,7 +132,6 @@ class ShowSystemNtpAll(ShowSystemNtpAllSchema):
             # candidate                 172.16.25.201  4  srvr  -  64   YYYYYYYY  -0.541
             m = p6.match(line)
             if m:
-
                 group = m.groupdict()
                 local_mode_dict = {'local_mode': {}}
                 client_dict = local_mode_dict['local_mode'].setdefault('client', {})
@@ -146,7 +145,7 @@ class ShowSystemNtpAll(ShowSystemNtpAllSchema):
                 client_dict['offset'] = float(group['offset'])
                 continue
 
-            # Base           172.16.189.64
+            # Base     172.16.189.64 (or 2001:4888:a2f:4025:135:228:0:242)
             m = p7.match(line)
             if m:
                 group = m.groupdict()
