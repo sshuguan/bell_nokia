@@ -12,7 +12,7 @@ from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
 from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
 from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
 from genie.libs.parser.sros.show_router_mpls_labels_summary import ShowRouterMplsLabelsSummary
-from genie.libs.parser.sros.show_log_syslog_id import ShowLogSyslogId
+from genie.libs.parser.sros.show_log_logid import ShowLogLogid
 logger = logging.getLogger(__name__)
 
 # convert "123,456,789" to 123456789
@@ -43,6 +43,28 @@ class CommonSetup(aetest.CommonSetup):
             dev.mdcli_execute("environment more false")
             logger.info('Device %s connected!' % dev.name)
 
+class Test_Log_Syslog(aetest.Testcase):
+
+    @aetest.test
+    def check_log_syslog(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # parse output of "show log log-id"
+            logd = ShowLogLogid(device=dev).parse()
+            if 'syslog' in logd:
+                for id in logd['syslog']:
+                    if logd['syslog'][id]['Admin State'] == 'up':
+                        logger.info('Device %s syslog %s up' % (dev.name, id))
+                    else:
+                        logger.error('Device %s syslog %s NOT up' % (dev.name, id))
+                        testpass = False
+            else:
+                logger.error('Device %s has NO syslog configured!' % dev.name)
+                testpass = False
+                
+        # set test result
+        self.passed() if testpass else self.failed()
 
 class Test_SysMem(aetest.Testcase):
 
@@ -251,22 +273,6 @@ class Test_Router_Mpls_Labels(aetest.Testcase):
         for dev in testbed:
             # parse output of "show router mpls-labels summary"
             mplslabelsummary = ShowRouterMplsLabelsSummary(device=dev).parse()
-            # TODO verify mpls labels
-
-        # set test result
-        self.passed() if testpass else self.failed()
-
-class Test_Log_Syslog_Id(aetest.Testcase):
-
-    @aetest.test
-    def check_log_syslog_id(self, testbed):
-
-        testpass = True
-        for dev in testbed:
-            # parse output of "show log syslog <id=1>"
-            syslogd = ShowLogSyslogId(device=dev).parse()
-            import pdb; pdb.set_trace()
-            
             # TODO verify mpls labels
 
         # set test result
