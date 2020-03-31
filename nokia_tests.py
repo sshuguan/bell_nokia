@@ -43,14 +43,22 @@ class CommonSetup(aetest.CommonSetup):
             dev.mdcli_execute("environment more false")
             logger.info('Device %s connected!' % dev.name)
 
+
 class Test_Ntp_Peer_Up(aetest.Testcase):
+
     @aetest.test
     def check_ntp_peer_up(self, testbed):
         testpass = True
         for dev in testbed:
             ntpd = dev.parse("show system ntp all")
-            import pdb; pdb.set_trace()
-            pass
+            if ntpd['clock_state']['system_status']['oper_status'] == 'up' \
+                and ntpd['peer']['172.16.1.82']['local_mode']['client']['state'] == 'chosen':
+                logger.info('Device %s NTP up. Good!' % dev.name)
+            else:
+                logger.error('Device %s NTP NOT up' % dev.name)
+                testpass = False
+        # set test result
+        self.passed() if testpass else self.failed()
 
 
 class Test_Log_Syslog(aetest.Testcase):
@@ -72,9 +80,9 @@ class Test_Log_Syslog(aetest.Testcase):
             else:
                 logger.error('Device %s has NO syslog configured!' % dev.name)
                 testpass = False
-                
         # set test result
         self.passed() if testpass else self.failed()
+
 
 class Test_SysMem(aetest.Testcase):
 
