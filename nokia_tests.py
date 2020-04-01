@@ -13,6 +13,7 @@ from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
 from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
 from genie.libs.parser.sros.show_router_mpls_labels_summary import ShowRouterMplsLabelsSummary
 from genie.libs.parser.sros.show_log_logid import ShowLogLogid
+from genie.libs.parser.sros.admin_redundancy_force_switchover_now import AdminRedundancyForceSwitchoverNow
 logger = logging.getLogger(__name__)
 
 # convert "123,456,789" to 123456789
@@ -229,13 +230,19 @@ class Test_IsisRoutes(aetest.Testcase):
     def check_isis_routes(self, testbed):
 
         testpass = True
+        verifyIps = ['67.70.219.13/32', '67.70.219.14/32']
         for dev in testbed:
             # parse output of "show router isis routes"
             isisrtd = ShowRouterIsisRoutes(device=dev).parse()
-            # TODO verify isis routes
-
+            for ip in verifyIps:
+                if ip in isisrtd['0']:
+                    logger.info('%s in isis route table. Good!' % ip)
+                else:
+                    logger.error('%s NOT in isis route table.' % ip)
+                    testpass = False
         # set test result
         self.passed() if testpass else self.failed()
+
 
 class Test_IsisPrefixSids(aetest.Testcase):
 
@@ -295,3 +302,19 @@ class Test_Router_Mpls_Labels(aetest.Testcase):
 
         # set test result
         self.passed() if testpass else self.failed()
+
+#class Test_Admin_Redundancy_Force_Switchover_Now(aetest.Testcase):
+#
+#    @aetest.test
+#    def check_admin_redundancy_force_switchover(self, testbed):
+#
+#        testpass = True
+#        for dev in testbed:
+#            # will include show card before and show card after
+#
+#            # parse output of "admin redundancy force-switchover now"
+#            adminswitchover = AdminRedundancyForceSwitchoverNow(device=dev).parse()
+#            # TODO verify "admin redundancy force-switchover now"
+#
+#        # set test result
+#        self.passed() if testpass else self.failed()
