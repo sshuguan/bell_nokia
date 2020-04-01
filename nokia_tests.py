@@ -149,36 +149,20 @@ class Test_CardNoError(aetest.Testcase):
     def check_card_health(self, testbed):
 
         testpass = True
+        verifySlots = ['A', 'B']
         for dev in testbed:
             # parse output of "show card detail"
             cardd = ShowCardDetail(device=dev).parse()
-            for s, cd in cardd.items():
-                hd = cd['Hardware Data']
-                admin = hd['Administrative state']
-                oper = hd['Operational state']
-                cardinfo = "{0} card {1} ({2})".format(
-                    dev.name, s, cd['provisioned type'])
-                # check card state
-                cardpass = True
-                err = ""
-                if admin != "up":
-                    err += "Admin state: %s (Not up);" % admin
-                    cardpass = cardpass and False
-                if oper != "up":
-                    err += "Oper state: %s (Not up)" % oper
-                    cardpass = cardpass and False
-                # log card info
-                if cardpass:
-                    logger.info(cardinfo + ' OK')
+            for slot in verifySlots:
+                if slot in cardd and \
+                    re.search(r'up/active|up/standby',
+                              cardd[slot]['operational state']):
+                    logger.info('%s CPM %s up. Good' % (dev.name, slot))
                 else:
-                    logger.error(cardinfo + ' ERROR')
-                    logger.error('  ' + err)
-                # update test result
-                testpass = testpass and cardpass
-
+                    logger.error('%s CPM %s NOT up' % (dev.name, slot))
+                    testpass = False
         # set test result
-        self.passed("No hardware error") if testpass \
-            else self.failed('Hardware errors')
+        self.passed("No CPM error") if testpass else self.failed('CPM error')
 
 
 class Test_FlashNotFull(aetest.Testcase):
