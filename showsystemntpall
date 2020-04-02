@@ -2,12 +2,12 @@
 ===============================================================================
 NTP Status
 ===============================================================================
-Configured         : Yes                Stratum              : 2
+Configured         : Yes                Stratum              : -
 Admin Status       : up                 Oper Status          : up
 Server Enabled     : Yes                Server Authenticate  : Yes
-Clock Source       : 172.16.1.82
+Clock Source       : none
 Auth Check         : Yes                
-Current Date & Time: 2020/03/31 18:36:22 UTC
+Current Date & Time: 2020/04/02 13:45:43 UTC
 ===============================================================================
 
 ===============================================================================
@@ -16,9 +16,9 @@ NTP Active Associations
 State                     Reference ID    St Type  A  Poll Reach     Offset(ms)
     Router         Remote                                            
 -------------------------------------------------------------------------------
-candidate                 172.16.1.82     2  srvr  y  64   YYYYYYYY  -0.026
+reject                    INIT            -  srvr  n  64   ........  0.000
     Base           172.16.1.78
-chosen                    GNSS            1  srvr  y  64   YYYYYYYY  -0.004
+reject                    INIT            -  srvr  n  64   ........  0.000
     Base           172.16.1.82
 ===============================================================================
 
