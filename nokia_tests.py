@@ -52,11 +52,12 @@ class Test_Ntp_Peer_Up(aetest.Testcase):
         testpass = True
         for dev in testbed:
             ntpd = dev.parse("show system ntp all")
-            if ntpd['clock_state']['system_status']['oper_status'] == 'up' \
-                and ntpd['peer']['172.16.1.82']['local_mode']['client']['state'] == 'chosen':
-                logger.info('Device %s NTP up. Good!' % dev.name)
+            if ntpd['clock_state']['system_status']['oper_status'] == 'up'\
+                and ntpd['peer']['172.16.1.82']['local_mode']['client']['state'] == 'chosen'\
+                and ntpd['peer']['172.16.1.78']['local_mode']['client']['state'] == 'candidate':
+                logger.info('Device %s NTP up & chosen/candidate state good!' % dev.name)
             else:
-                logger.error('Device %s NTP NOT up' % dev.name)
+                logger.error('Device %s NTP NOT up or chosen/candidate error!' % dev.name)
                 testpass = False
         # set test result
         self.passed() if testpass else self.failed()
@@ -234,10 +235,16 @@ class Test_IsisPrefixSids(aetest.Testcase):
     def check_isis_prefixsids(self, testbed):
 
         testpass = True
+        verifyIps = ['67.70.219.13/32', '67.70.219.14/32']
         for dev in testbed:
             # parse output of "show router isis prefix-sids"
             isispfxd = ShowRouterIsisPrefixSids(device=dev).parse()
-            # TODO verify isis prefix-sids
+            for ip in verifyIps:
+                if ip in isispfxd['0']:
+                    logger.info('%s in isis prefix-sids. Good!' % ip)
+                else:
+                    logger.error('%s NOT in isis prefix-sids' % ip)
+                    testpass = False
 
         # set test result
         self.passed() if testpass else self.failed()
