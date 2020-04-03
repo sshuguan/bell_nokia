@@ -2,7 +2,7 @@
 ===============================================================================
 NTP Status
 ===============================================================================
-Configured         : Yes                Stratum              : -
+Configured         : Yes                Stratum              : 2
 Admin Status       : up                 Oper Status          : up
 Server Enabled     : Yes                Server Authenticate  : Yes
 Clock Source       : none
