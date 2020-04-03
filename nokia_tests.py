@@ -14,6 +14,7 @@ from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
 from genie.libs.parser.sros.show_router_mpls_labels_summary import ShowRouterMplsLabelsSummary
 from genie.libs.parser.sros.show_log_logid import ShowLogLogid
 from genie.libs.parser.sros.admin_redundancy_force_switchover_now import AdminRedundancyForceSwitchoverNow
+from genie.libs.parser.sros.show_router_routetable import ShowRouterRoutetable
 logger = logging.getLogger(__name__)
 
 # convert "123,456,789" to 123456789
@@ -245,6 +246,35 @@ class Test_IsisPrefixSids(aetest.Testcase):
                 else:
                     logger.error('%s NOT in isis prefix-sids' % ip)
                     testpass = False
+
+        # set test result
+        self.passed() if testpass else self.failed()
+
+class Test_RoutetableWithSidLabel(aetest.Testcase):
+
+    @aetest.test
+    def check_routetable_sidLabel(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            rtabled = ShowRouterRoutetable(device=dev).parse()
+            pfxsidd = ShowRouterIsisPrefixSids(device=dev).parse()
+            # collect all /32 prefixes with isis-proto
+            pfx32 = [x for x in rtabled if x.endswith('/32')
+                     and rtabled[x]['Proto'] == 'ISIS']
+            # verify /32 prefix in isis-prefix-sid table
+            err = 0
+            for pfx in pfx32:
+                if pfx not in pfxsidd['0']:
+                    logger.error('%s NOT in isis-prefix-sid table' % pfx)
+                    err += 1
+
+            logger.info("%s /32 isis prefix found in route-table" % len(pfx32))
+            if err:
+                logger.error("%s /32 prefix NOT in isis-prefix-sid table" % err)
+                testpass = False
+            else:
+                logger.info("all /32 prefix in isis-prefix-sid table")
 
         # set test result
         self.passed() if testpass else self.failed()
