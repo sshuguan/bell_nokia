@@ -294,7 +294,7 @@ class Test_Router_Mpls_Labels(aetest.Testcase):
         # set test result
         self.passed() if testpass else self.failed()
 
-#class Test_Admin_Redundancy_Force_Switchover_Now(aetest.Testcase):
+# class Test_Admin_Redundancy_Force_Switchover_Now(aetest.Testcase):
 #
 #    @aetest.test
 #    def check_admin_redundancy_force_switchover(self, testbed):
