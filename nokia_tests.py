@@ -173,6 +173,7 @@ class Test_FlashNotFull(aetest.Testcase):
     def check_Flash_health(self, testbed):
 
         testpass = True
+        cf3 = 'Flash - cf3'
         for dev in testbed:
             # parse output of "show card A|B detail"
             for cpm in ["A", "B"]:
@@ -182,19 +183,17 @@ class Test_FlashNotFull(aetest.Testcase):
                     logger.info("CPM %s not equipped!" % cpm)
                     continue  # cpm A|B not equipped
 
-                # check flash card not full
-                for k, kd in cpmd[cpm].items():
-                    if re.search(r'^Flash', k) and \
-                            kd['Operational state'] == "up":
-                        if s2i(kd['Percent Used']) > 98:
-                            logger.error("CPM %s, %s full" % (cpm, k))
-                            testpass = testpass and False
-                        else:
-                            logger.info("CPM %s, %s has free space" % (cpm, k))
+                # check flash-cf3 card not full
+                if cf3 in cpmd[cpm] and \
+                    cpmd[cpm][cf3]['Operational state'] == "up" and \
+                    s2i(cpmd[cpm][cf3]['Percent Used']) <= 90:
+                    logger.info("CPM %s, %s up and not full" % (cpm, cf3))
+                else:
+                    logger.error("CPM %s, %s almost full!" % (cpm, cf3))
+                    testpass = False
 
         # set test result
-        self.passed("Flash has fress space") if testpass \
-            else self.failed('Flash full !!!')
+        self.passed() if testpass else self.failed('Flash full!')
 
 class Test_IsisDatabase(aetest.Testcase):
 
