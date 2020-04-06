@@ -318,8 +318,13 @@ class Test_Router_Mpls_Labels(aetest.Testcase):
         testpass = True
         for dev in testbed:
             # parse output of "show router mpls-labels summary"
-            mplslabelsummary = ShowRouterMplsLabelsSummary(device=dev).parse()
-            # TODO verify mpls labels
+            mplslbld = ShowRouterMplsLabelsSummary(device=dev).parse()
+            if mplslbld['Segment Routing Start Label'] == '16000' and\
+                mplslbld['Segment Routing End Label'] == '81534':
+                logger.info("SRGB label range allocated properply. Good!")
+            else:
+                logger.error("SRGB label range NOT in 16000~81534!")
+                testpass = False
 
         # set test result
         self.passed() if testpass else self.failed()
