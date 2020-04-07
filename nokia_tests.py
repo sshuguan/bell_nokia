@@ -305,6 +305,13 @@ class Test_Bfd_Lag_up(aetest.Testcase):
                     ld['LACP'] == 'enabled' and\
                     ld['Mode'] == 'active':
                     logger.info('Lag %s up/active. Good!' % l)
+                    for p in ld['Port-id']:
+                        if ld[p]['Opr'] == 'up' and\
+                            ld[p]['Act/Stdby'] == 'active':
+                            logger.info("%s up/active. Good!" % p)
+                        else:
+                            logger.error("%s NOT up/active" % p)
+                            testpass = False
                 else:
                     logger.error('Lag %s NOT up/active!' % l)
                     testpass = False
