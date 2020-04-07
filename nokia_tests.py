@@ -193,18 +193,25 @@ class Test_FlashNotFull(aetest.Testcase):
         # set test result
         self.passed() if testpass else self.failed('Flash full!')
 
-class Test_IsisDatabase(aetest.Testcase):
+class Test_P2pIp_NotIn_IsisRoute(aetest.Testcase):
 
     @aetest.test
-    def check_isis_database(self, testbed):
+    def check_ip_notin_isis_routes(self, testbed):
 
         testpass = True
+        cmd = 'show router isis routes | match %s'
+        p2p = {'CR01-Nokia-NGCore': ['172.16.1.116/31', '172.16.3.209/31'],
+               'CR02-Nokia-NGCore': ['172.16.3.140/31', '172.16.3.207/31']}
         for dev in testbed:
-            # parse output of "show router isis database"
-            isisdbd = ShowRouterIsisDatabase(device=dev).parse()
-            # TODO verify isis database
-
-        # set test result
+            for ip in p2p[dev.name]:
+                cout = dev.execute(cmd % ip)
+                if not cout:
+                    logger.info('%s isis route does not have %s. Good!'
+                                % (dev.name, ip))
+                else:
+                    logger.info('%s isis route have %s!' % (dev.name, ip))
+                    testpass = False
+ 
         self.passed() if testpass else self.failed()
 
 class Test_IsisRoutes(aetest.Testcase):
