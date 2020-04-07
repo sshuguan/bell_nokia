@@ -151,20 +151,18 @@ class Test_CardNoError(aetest.Testcase):
     def check_card_health(self, testbed):
 
         testpass = True
-        verifySlots = ['A', 'B']
         for dev in testbed:
-            # parse output of "show card detail"
-            cardd = ShowCardDetail(device=dev).parse()
-            for slot in verifySlots:
-                if slot in cardd and \
-                    re.search(r'up/active|up/standby',
-                              cardd[slot]['operational state']):
-                    logger.info('%s CPM %s up. Good' % (dev.name, slot))
-                else:
-                    logger.error('%s CPM %s NOT up' % (dev.name, slot))
+            r1 = dev.execute("show card detail | match '^Card|Trap'")
+            r2 = dev.execute("show mda detail | match '^MDA|Trap'")
+            for r in [r1, r2]:
+                if "Trap" in r:
+                    logger.error("%s has Card/Trap errors!" % dev.name)
                     testpass = False
+                else:
+                    logger.info("%s all card/mda good" % dev.name)
+        
         # set test result
-        self.passed("No CPM error") if testpass else self.failed('CPM error')
+        self.passed() if testpass else self.failed('Card error')
 
 
 class Test_FlashNotFull(aetest.Testcase):
@@ -278,18 +276,32 @@ class Test_RoutetableWithSidLabel(aetest.Testcase):
         # set test result
         self.passed() if testpass else self.failed()
 
-class Test_Bfd_Session(aetest.Testcase):
+class Test_Bfd_Lag_up(aetest.Testcase):
 
     @aetest.test
-    def check_bfd_session(self, testbed):
+    def check_bfd_lag_up(self, testbed):
 
         testpass = True
         for dev in testbed:
-            # parse output of "show router bfd session"
-            isispfxd = ShowRouterBfdSession(device=dev).parse()
-            # TODO verify bfd session
+            # verify bfd session up
+            bfdd = ShowRouterBfdSession(device=dev).parse()
+            for b, bd in bfdd.items():
+                if bd['State'] == 'Up':
+                    logger.info('Bfd session %s up. Good!' % b)
+                else:
+                    logger.error('Bfd session %s NOT up!' % b)
+                    testpass = False
+            # verify lag up/active
+            lagd = ShowLagDetail(device=dev).parse()
+            for l, ld in lagd.items():
+                if ld['Opr'] == 'up' and\
+                    ld['LACP'] == 'enabled' and\
+                    ld['Mode'] == 'active':
+                    logger.info('Lag %s up/active. Good!' % l)
+                else:
+                    logger.error('Lag %s NOT up/active!' % l)
+                    testpass = False
 
-        # set test result
         self.passed() if testpass else self.failed()
 
 class Test_Ecmp_Over_lag(aetest.Testcase):
