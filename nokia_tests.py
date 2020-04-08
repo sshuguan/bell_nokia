@@ -11,6 +11,7 @@ from genie.libs.parser.sros.show_router_isis_prefix_sids import ShowRouterIsisPr
 from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
 from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
 from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
+from genie.libs.parser.sros.show_lag_flowdistribution import ShowLagFlowdistribution
 from genie.libs.parser.sros.show_router_mpls_labels_summary import ShowRouterMplsLabelsSummary
 from genie.libs.parser.sros.show_log_logid import ShowLogLogid
 from genie.libs.parser.sros.admin_redundancy_force_switchover_now import AdminRedundancyForceSwitchoverNow
@@ -300,36 +301,43 @@ class Test_Bfd_Lag_up(aetest.Testcase):
                     testpass = False
             # verify lag up/active
             lagd = ShowLagDetail(device=dev).parse()
-            for l, ld in lagd.items():
-                if ld['Opr'] == 'up' and\
-                    ld['LACP'] == 'enabled' and\
-                    ld['Mode'] == 'active':
-                    logger.info('Lag %s up/active. Good!' % l)
-                    for p in ld['Port-id']:
-                        if ld[p]['Opr'] == 'up' and\
-                            ld[p]['Act/Stdby'] == 'active':
-                            logger.info("%s up/active. Good!" % p)
+            for lg, lgd in lagd.items():
+                if lgd['Opr'] == 'up' and\
+                    lgd['LACP'] == 'enabled' and\
+                    lgd['Mode'] == 'active':
+                    logger.info('Lag %s up/active. Good!' % lg)
+                    for pt, ptd in lgd['Port-id'].items():
+                        if ptd['Opr'] == 'up' and\
+                            ptd['Act/Stdby'] == 'active':
+                            logger.info("%s up/active. Good!" % pt)
                         else:
-                            logger.error("%s NOT up/active" % p)
+                            logger.error("%s NOT up/active" % pt)
                             testpass = False
                 else:
-                    logger.error('Lag %s NOT up/active!' % l)
+                    logger.error('Lag %s NOT up/active!' % lg)
                     testpass = False
 
         self.passed() if testpass else self.failed()
 
-class Test_Ecmp_Over_lag(aetest.Testcase):
+class Test_Lag_Stats_Flow(aetest.Testcase):
 
     @aetest.test
-    def check_ecmp_over_lag(self, testbed):
+    def check_lag_stats_flow(self, testbed):
 
         testpass = True
         for dev in testbed:
-            # parse output of "show lag detail"
             # parse output of "show lag statistics"
-            lagd = ShowLagDetail(device=dev).parse()
             lagstd = ShowLagStatistics(device=dev).parse()
-            # TODO verify lag session
+            for lg, lgd in lagstd.items():
+                if lgd['Totals']['Input Error'] == 0 and\
+                    lgd['Totals']['Output Error'] == 0:
+                    logger.info('Lag %s no error. Good!' % lg)
+                    # parse show lag <lag-id> flow-distribution
+                    lagfd = ShowLagFlowdistribution(device=dev).parse(output=int(lg))
+                else:
+                    logger.error('Lag %s has errors' % lg)
+                    testpass = True
+
 
         # set test result
         self.passed() if testpass else self.failed()
