@@ -60,7 +60,7 @@ class ShowLagStatistics(ShowLagStatisticsSchema):
             m = re.search(r'^LAG (\d+)$', line)
             if m:
                 lagd = parsed[m.group(1)] = {}
-                lpid = lagd['Port-id'] = list()
+                lpid = lagd['Port-id'] = {}
                 continue
 
             m = re.search(r'^Description +: +\b(.*)$', line)
@@ -70,9 +70,7 @@ class ShowLagStatistics(ShowLagStatisticsSchema):
 
             m = re.search(r'^(\d\S+) +(\d+) +(\d+)$', line)
             if m:
-                if m.group(1) not in lpid:
-                    lpid.append(m.group(1))
-                portd = lagd[m.group(1)] = {
+                portd = lpid[m.group(1)] = {
                     'Input(Packets)': m.group(2),
                     'Output(Packets)': m.group(3)}
                 portstat = True

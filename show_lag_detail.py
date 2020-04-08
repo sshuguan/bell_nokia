@@ -92,7 +92,7 @@ class ShowLagDetail(ShowLagDetailSchema):
             m = re.search(r'^LAG (\d+)$', line)
             if m:
                 lagd = parsed[m.group(1)] = {}
-                lpid = lagd['Port-id'] = list()
+                lpid = lagd['Port-id'] = {}
                 continue
 
             m = re.search(r'^Description +: +\b(.*)$', line)
@@ -113,9 +113,7 @@ class ShowLagDetail(ShowLagDetailSchema):
             m = re.search(r'^(\d\S+) +(\S+) +(\S+) +(\S+)'
                           r' +(\S+)? +(\S+) +(\S+) +(\S+)$', line)
             if m:
-                if m.group(1) not in lpid:
-                    lpid.append(m.group(1))
-                lagd[m.group(1)] = {
+                lpid[m.group(1)] = {
                     'Adm': m.group(2), 'Act/Stdby': m.group(3),
                     'Opr': m.group(4), 'Primary': m.group(5),
                     'Sub-group': m.group(6), 'Forced': m.group(7),
@@ -124,7 +122,7 @@ class ShowLagDetail(ShowLagDetailSchema):
             m = re.search(r'^(\d\S+) +(actor|partner) +(\S+) +(\S+)'
                           r' +(\S+) +(\S+) +(\S+) +(\S+) +(\S+) +(\S+)$', line)
             if m:
-                lagd[m.group(1)][m.group(2)] = {
+                lpid[m.group(1)][m.group(2)] = {
                     'Exp': m.group(3), 'Def': m.group(4),
                     'Dist': m.group(5), 'Col': m.group(6),
                     'Syn': m.group(7), 'Aggr': m.group(8),
