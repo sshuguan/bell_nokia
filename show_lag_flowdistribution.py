@@ -47,11 +47,12 @@ class ShowLagFlowdistribution(ShowLagFlowdistributionSchema):
         # ===============================================================================
 
         parsed = {}
+        portd = parsed['Port'] = {}
 
         for line in out.splitlines():
             m = re.search(r'^(\d\S+) +(\d\S+) +(\d+) +(\d\S+)$', line)
             if m:
-                parsed[m.group(1)] = {
+                portd[m.group(1)] = {
                     'Bandwidth': int(m.group(2).split('.')[0]),
                     'Hash-weight': m.group(3),
                     'Flow-share': int(m.group(4).split('.')[0])}
