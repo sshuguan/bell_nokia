@@ -9,6 +9,7 @@ from genie.libs.parser.sros.show_router_isis_routes import ShowRouterIsisRoutes
 from genie.libs.parser.sros.show_router_isis_database import ShowRouterIsisDatabase
 from genie.libs.parser.sros.show_router_isis_prefix_sids import ShowRouterIsisPrefixSids
 from genie.libs.parser.sros.show_router_bfd_session import ShowRouterBfdSession
+from genie.libs.parser.sros.show_lag import ShowLag
 from genie.libs.parser.sros.show_lag_detail import ShowLagDetail
 from genie.libs.parser.sros.show_lag_statistics import ShowLagStatistics
 from genie.libs.parser.sros.show_lag_flowdistribution import ShowLagFlowdistribution
@@ -327,17 +328,26 @@ class Test_Lag_Stats_Flow(aetest.Testcase):
         testpass = True
         for dev in testbed:
             # parse output of "show lag statistics"
-            lagstd = ShowLagStatistics(device=dev).parse()
-            for lg, lgd in lagstd.items():
-                if lgd['Totals']['Input Error'] == 0 and\
-                    lgd['Totals']['Output Error'] == 0:
-                    logger.info('Lag %s no error. Good!' % lg)
+            lagd = ShowLag(device=dev).parse()
+            lagsd = ShowLagStatistics(device=dev).parse()
+            for lg, lsd in lagsd.items():
+                if lagd['Lag-id'][lg]['Opr'] == 'up' and\
+                    lsd['Totals']['Input Error'] == 0 and\
+                    lsd['Totals']['Output Error'] == 0:
+                    logger.info('Lag %s up and good!' % lg)
                     # parse show lag <lag-id> flow-distribution
-                    lagfd = ShowLagFlowdistribution(device=dev).parse(output=int(lg))
+                    lgfd = ShowLagFlowdistribution(
+                        device=dev).parse(output=int(lg))
+                    for pt, ptd in lgfd['Port'].items():
+                        if lgfd['Total operational bandwidth'] * \
+                            ptd['Flow-share'] / 100 == ptd['Bandwidth']:
+                            logger.info('Lag %s port %s allocated flow good!' % (lg, pt))
+                        else:
+                            logger.error('Lag %s port %s allocated flow wrong!' % (lg, pt))
+                            testpass = False
                 else:
-                    logger.error('Lag %s has errors' % lg)
-                    testpass = True
-
+                    logger.error('Lag %s either down or errors' % lg)
+                    testpass = False
 
         # set test result
         self.passed() if testpass else self.failed()
