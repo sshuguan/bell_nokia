@@ -1,4 +1,5 @@
 import re
+import time
 import logging
 from pyats import aetest
 from genie.testbed import load
@@ -372,18 +373,27 @@ class Test_Router_Mpls_Labels(aetest.Testcase):
         # set test result
         self.passed() if testpass else self.failed()
 
-# class Test_Admin_Redundancy_Force_Switchover_Now(aetest.Testcase):
-#
-#    @aetest.test
-#    def check_admin_redundancy_force_switchover(self, testbed):
-#
-#        testpass = True
-#        for dev in testbed:
-#            # will include show card before and show card after
-#
-#            # parse output of "admin redundancy force-switchover now"
-#            adminswitchover = AdminRedundancyForceSwitchoverNow(device=dev).parse()
-#            # TODO verify "admin redundancy force-switchover now"
-#
-#        # set test result
-#        self.passed() if testpass else self.failed()
+class Test_Admin_Redundancy_Force_Switchover_Now(aetest.Testcase):
+
+    @aetest.test
+    def check_admin_redundancy_force_switchover(self, testbed):
+
+        testpass = True
+        for dev in testbed:
+            # show card below is identifies the active CPM before run 
+            r1 = dev.execute("show card | match 'up/active'")
+        
+            # parse output of "admin redundancy force-switchover now"
+            adminswitchover = AdminRedundancyForceSwitchoverNow(device=dev).parse()
+            
+            dev.disconnect()
+            dev.connect()
+            # TODO verify "admin redundancy force-switchover now"
+            # show card below identifies the active CPM after run 
+            r2 = dev.execute("show card | match 'up/active'")
+           
+            if r1[0] in r2[0]:
+                testpass = False
+
+        # set test result
+        self.passed() if testpass else self.failed()

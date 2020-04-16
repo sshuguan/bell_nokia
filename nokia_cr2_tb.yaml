@@ -1,0 +1,17 @@
+# this yaml file includes 2 Nokia SROS nodes
+devices:
+  CR02-Nokia-NGCore:
+    alias: "uut2"
+    os: sros
+    type: sros
+    connections:
+      cli:
+        ip: 172.16.18.4
+        protocol: ssh
+        settings:
+          DEFAULT_CLI_ENGINE: mdcli
+    credentials:
+      default:
+        password: Nokia123
+        username: NokiaTest
+ 
